@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <title>Razorpay</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+        .scrollWrapper {
+            position: absolute;
+            animation: scrollUp 20s linear infinite;
+        }
+
+        @keyframes scrollUp {
+            0% {
+                transform: translateY(0%);
+            }
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- wrapper container -->
+    <div class="h-full w-full overflow-hidden relative">
+        <!-- banner -->
+        <div class="flex font-mullish p-2 w-full relative bg-[#e9eaea]">
+            <div class="absolute top-0 left-0 z-0 flex justify-start">
+                <img src="./images/banner-left.png" alt="" class="h-[3.5rem] w-[100%] [@media(max-width:600px)]:w-[50%] [@media(max-width:530px)]:h-[5.8rem]">
+            </div>
+            <div class="flex items-center justify-center mx-auto relative z-20 [@media(max-width:530px)]:flex-col">
+                <p class="font-semibold text-center inline-block mr-6 text-xs md:text-sm lg:text-lg">
+                    RazorpayX Payroll: 3 Clicks, Payroll Fixed! Automote payroll now!
+                </p>
+
+                <button class="text-white items-center mr-5 justify-center font-semibold text-sm bg-lightBlue rounded hover:bg-lightBlue500 transition-all duration-200 p-[10px] [@media(max-width:530px)]:text-xs [@media(max-width:530px)]:mt-2">Know More</button>
+            </div>
+            <div class="absolute top-0 right-0 z-10 flex justify-end overflow-hidden">
+                <img src="./images/banner-right.png" alt="" class="h-[3.5rem] w-[100%] [@media(max-width:600px)]:w-[50%] [@media(max-width:530px)]:h-[5.8rem]">
+            </div>
+        </div>
+
+        <!-- navigation bar -->
+        <nav class="bg-deepBlue font-mullish relative z-10">
+            <div class="flex w-11/12 max-w-[1080px] mx-auto relative items-center justify-between text-sm">
+                <a href="#" class="cursor-pointer py-7 pr-7">
+                    <img src="./images/logo-razorpay.png" alt="Razorpay" width="125px" height="30px">
+                </a>
+        
+                <div class="space-x-6 flex [@media(max-width:980px)]:hidden">
+                    <div class="text-white font-mullish py-7 cursor-pointer border-b-4 border-b-transparent
+                     transition-all duration-200 relative hover:border-b-lightBlue hover:text-lightBlue">
+                        <a href="#">Payments</a>
+                    </div>
+            
+                    <div class="text-white font-mullish py-7 cursor-pointer border-b-4 border-b-transparent
+                    transition-all duration-200 relative hover:border-b-lightBlue hover:text-lightBlue">
+                        <a href="#">Banking</a>
+                    </div>
+            
+                    <div class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
+                    transition-all duration-200 relative">
+                        <a href="#">Corporate Card</a>
+                    </div>
+            
+                    <div class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer
+                    transition-all duration-200 relative">
+                        <a href="#">Payroll</a>
+                    </div>
+            
+                    <div class="text-white font-mullish py-7 cursor-pointer border-b-4 border-b-transparent
+                    transition-all duration-200 relative hover:border-b-lightBlue hover:text-lightBlue">
+                        <a href="#">Resources</a>
+                    </div>
+            
+                    <div class="text-white font-mullish py-7 cursor-pointer border-b-4 border-b-transparent
+                    transition-all duration-200 relative hover:border-b-lightBlue hover:text-lightBlue">
+                        <a href="#">Support</a>
+                    </div>
+            
+                    <div class="text-white font-mullish py-7 cursor-pointer border-b-4 border-b-transparent
+                    transition-all duration-200 relative hover:border-b-lightBlue hover:text-lightBlue">
+                        <a href="#">Pricing</a>
+                    </div>
+                </div>
+                        
+                <div class="flex gap-3 items-center">
+                    <div>
+                        <img src="./images/flag-india.png" alt="India" width="28px" height="20px" class="[@media(max-width:980px)]:hidden">
+                    </div>
+
+                    <svg class="cursor-pointer w-[28px] h-[28px] hidden [@media(max-width:980px)]:block" fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24.75 24.75" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M0,3.875c0-1.104,0.896-2,2-2h20.75c1.104,0,2,0.896,2,2s-0.896,2-2,2H2C0.896,5.875,0,4.979,0,3.875z M22.75,10.375H2 c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2h20.75c1.104,0,2-0.896,2-2C24.75,11.271,23.855,10.375,22.75,10.375z M22.75,18.875H2 c-1.104,0-2,0.896-2,2s0.896,2,2,2h20.75c1.104,0,2-0.896,2-2S23.855,18.875,22.75,18.875z"></path> </g> </g></svg>
+    
+                    <button class="text-white font-mullish py-3 px-5 border-lightBlue border rounded-sm font-bold">Login</button>
+    
+                    <button class="rounded-sm bg-white text-lightBlue300 border border-white flex py-3 px-4 justify-between gap-1 [@media(max-width:1100px)]:hidden">
+                        <p class="font-bold font-mullish hover:text-lightBlue500 transition-all duration-200">Sign Up</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 24 24">
+                            <path d="M6 12h10M14 8l4 4-4 4" stroke="black" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                    </button>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Hero section -->
+        <section class="bg-deepBlue relative font-mullish">
+            <div class="flex text-white font-mullish max-w-[1080px] w-10/12 mx-auto items-center justify-center -mt-0.5 [@media(max-width:860px)]:flex-col">
+                <!-- left part -->
+                <div class="space-y-8">
+                    <h1 class="text-[40px] leading-[1.2] font-bold mb-4">Power your finance, grow your business</h1>
+        
+                    <div class="w-6 h-1 bg-greenLight"></div>
+        
+                    <p class="leading-7 text-[18px] opacity-70">Accept payments from cutomers. Automate payouts to vendors & employees. Never run out of working capital.</p>
+        
+                    <button class="font-bold bg-lightBlue rounded hover:bg-lightBlue500 transition-all duration-200 py-[14px] px-[18px]">Sign Up Now</button>
+                </div>
+                
+                <!-- right part -->
+                <div>
+                    <img src="./images/home-page.png" alt="" class="max-w-[100%]">
+                </div>
+            </div>
+        </section>
+    
+        <!-- feature section 1 -->
+        <section class="relative mt-[5rem] font-mullish w-full">
+            <div class="absolute top-[-5.2rem] left-0 w-full h-[112px] z-10">
+                <svg viewBox="0 0 100 100" width="100%" height="112" preserveAspectRatio="none">
+                    <polygon points="-4,0 105,0 92.2,100" fill="#02042a"/>
+                </svg>
+            </div>
+            
+            <div class="[@media(max-width:900px)]:hidden">
+                <img src="./images/left-dot.png" alt="" class="absolute top-[0.5rem] left-[5rem] inline-block" loading="lazy" width="200px" height="167px">
+                <img src="./images/right-dot.png" alt="" class="absolute top-[3.5rem] right-[0.2rem] inline-block" loading="lazy" width="233px" height="167px">
+            </div>
+    
+            <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+                <!-- heading -->
+                <h1 class="font-mullish font-bold text-center text-2xl leading-[1.2] mt-4">Accept Payments with Razorpay Payment Suite</h1>
+                <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+    
+                <!-- content box -->
+                <div class="w-full bg-white flex rounded-md relative p-10 py-12 border-lightGray border-2 min-h-[520px]">
+                    <div class="flex flex-col justify-between items-start w-full z-10">
+                        <h3 class="font-mullish font-bold text-[1.8rem] leading-10 max-w-[500px]">Supercharge your business with the all-powerfull 
+                            <span class="text-lightBlue">Payment Gateway</span>
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center font-mullish space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>100+ Payment Methods</span>
+                            </li>
+                            <li class="flex items-center font-mullish space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>Industry Leading Success Rate</span>
+                            </li>
+                            <li class="flex items-center font-mullish space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>Superior Checkout Experience</span>
+                            </li>
+                            <li class="flex items-center font-mullish space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>Easy to Integrate</span>
+                            </li>
+                            <li class="flex items-center font-mullish space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>Instant Settlements from day 1</span>
+                            </li>
+                            <li class="flex items-center font-mullish space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>In-depth reporting and Insights</span>
+                            </li>
+                        </ul>
+    
+                        <div class="flex items-start space-x-4 justify-start [@media(max-width:415px)]:flex-col-reverse">
+                            <button class="w-fit text-white bg-lightBlue py-[14px] px-[18px] rounded-md font-mullish font-bold
+                             hover:bg-lightBlue500 transition-all duration-200 flex gap-x-1">
+                                <p>Sign Up Now</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                                    <path d="M6 12h10M14 8l4 4-4 4" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                             
+                            </button>
+                            <div class="items-center justify-center py-[14px] flex text-lightBlue hover:text-grayBlue transition-all
+                            duration-200 cursor-pointer font-mullish font-bold">
+                                <a href="#">Know more</a>
+                                <i data-feather="chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <img src="./images/feature-section.png" alt=""
+                    class="h-full absolute bottom-0 right-0 overflow-hidden pointer-events-none z-0 [@media(max-width:980px)]:h-[75%] [@media(max-width:720px)]:hidden">
+                </div>
+            </div>
+            
+            <!-- card section -->
+            <div class="grid grid-cols-1 relative w-11/12 max-w-[1080px] mx-auto pt-4 gap-4 mt-[2rem] [@media(min-width:980px)]:grid-cols-3 [@media(min-width:560px)]:grid-cols-2">
+                <!-- Box1 -->
+                <div class="group w-full h-full min-h-[15rem] relative cursor-pointer hover:shadow-lg transition-all duration-300 overflow-hidden">
+                    <!-- Box Shape -->
+                    <svg viewBox="0 0 100 100"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute inset-0 w-full h-full z-10">
+                        <!-- Rectangle with top-right cut -->
+                        <path d="M 0,0 
+                                L 70,0 
+                                L 100,30 
+                                L 100,100 
+                                L 0,100 
+                                Z
+                                M 70,0 
+                                L 100,30" 
+                                fill="white"
+                                stroke="#818597"
+                                stroke-width="0.5"
+                                stroke-opacity="0.2"/>
+                    </svg>
+                
+                    <!-- Image behind the SVG -->
+                    <svg class="absolute right-3 top-3 w-12 h-12 rounded-full z-0 bg-lightBlue transition-all duration-200 group-hover:bg-lightBlue300" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9.16488 17.6505C8.92513 17.8743 8.73958 18.0241 8.54996 18.1336C7.62175 18.6695 6.47816 18.6695 5.54996 18.1336C5.20791 17.9361 4.87912 17.6073 4.22153 16.9498C3.56394 16.2922 3.23514 15.9634 3.03767 15.6213C2.50177 14.6931 2.50177 13.5495 3.03767 12.6213C3.23514 12.2793 3.56394 11.9505 4.22153 11.2929L7.04996 8.46448C7.70755 7.80689 8.03634 7.47809 8.37838 7.28062C9.30659 6.74472 10.4502 6.74472 11.3784 7.28061C11.7204 7.47809 12.0492 7.80689 12.7068 8.46448C13.3644 9.12207 13.6932 9.45086 13.8907 9.7929C14.4266 10.7211 14.4266 11.8647 13.8907 12.7929C13.7812 12.9825 13.6314 13.1681 13.4075 13.4078M10.5919 10.5922C10.368 10.8319 10.2182 11.0175 10.1087 11.2071C9.57284 12.1353 9.57284 13.2789 10.1087 14.2071C10.3062 14.5492 10.635 14.878 11.2926 15.5355C11.9502 16.1931 12.279 16.5219 12.621 16.7194C13.5492 17.2553 14.6928 17.2553 15.621 16.7194C15.9631 16.5219 16.2919 16.1931 16.9495 15.5355L19.7779 12.7071C20.4355 12.0495 20.7643 11.7207 20.9617 11.3787C21.4976 10.4505 21.4976 9.30689 20.9617 8.37869C20.7643 8.03665 20.4355 7.70785 19.7779 7.05026C19.1203 6.39267 18.7915 6.06388 18.4495 5.8664C17.5212 5.3305 16.3777 5.3305 15.4495 5.8664C15.2598 5.97588 15.0743 6.12571 14.8345 6.34955" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+                    
+                    <!-- Box Content -->
+                    <div class="z-20 relative h-full w-full flex flex-col justify-between pl-5 py-6 pr-8">
+                        <div>
+                            <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-deepBlueHead">Payment Links</h3>
+                            <p class="text-grayText mt-6">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
+                        </div>
+                
+                        <div class="items-center py-[14px] flex text-lightBlue cursor-pointer font-mullish font-bold">
+                            <div class="hover:text-grayBlue transition-all duration-200 flex">
+                                <a href="#">Know more</a>
+                                <i data-feather="chevron-right" ></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <svg class="absolute z-30 w-36 h-36 -right-8 -bottom-5 opacity-0 group-hover:opacity-100 transition-all duration-200" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 400"><path d="M195.3404998779297,299.6415710449219C222.1012535858154,272.7329679107666,303.8575316619873,152.2311720275879,357.5268859863281,136.5591278076172C411.19624031066894,120.88708358764649,468.7141502380371,210.5734619140625,520.6093139648438,204.65948486328125C572.5044776916504,198.7455078125,647.0564666748047,117.86737861633301,672.0430297851562,100.71684265136719" fill="none" stroke-width="30" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="butt" transform="matrix(1,0,0,1,-33.69175720214844,-0.17920684814453125)"></path><defs><linearGradient id="SvgjsLinearGradient1000" gradientTransform="rotate(76, 0.5, 0.5)"><stop stop-color="hsl(205, 69%, 60%)" offset="0"></stop><stop stop-color="hsl(205, 69%, 80%)" offset="1"></stop></linearGradient></defs></svg>
+                        
+                </div>
+                
+                <!-- Box2 -->
+                <div class="group w-full h-full min-h-[15rem] relative cursor-pointer hover:shadow-lg transition-all duration-3 overflow-hidden">
+                    <!-- Box Shape -->
+                    <svg viewBox="0 0 100 100"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute inset-0 w-full h-full z-10">
+                        <!-- Rectangle with top-right cut -->
+                        <path d="M 0,0 
+                                L 70,0 
+                                L 100,30 
+                                L 100,100 
+                                L 0,100 
+                                Z
+                                M 70,0 
+                                L 100,30" 
+                                fill="white"
+                                stroke="#818597"
+                                stroke-width="0.5"
+                                stroke-opacity="0.2"/>
+                    </svg>
+                
+                    <!-- Image behind the SVG -->
+                    <svg class="group-hover:bg-lightBlue300 absolute right-3 top-3 w-12 h-12 rounded-full z-0 bg-lightBlue transition-all duration-200" viewBox="-180 -180 960.00 960.00" version="1.1" id="svg9724" sodipodi:docname="page.svg" inkscape:version="1.2.2 (1:1.2.2+202212051550+b0a8486541)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs id="defs9728"></defs> <sodipodi:namedview id="namedview9726" pagecolor="#ffffff" bordercolor="#ffffff" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#ffffff" showgrid="true" inkscape:zoom="0.84118632" inkscape:cx="176.53639" inkscape:cy="360.79997" inkscape:window-width="1920" inkscape:window-height="1009" inkscape:window-x="0" inkscape:window-y="1080" inkscape:window-maximized="1" inkscape:current-layer="svg9724" showguides="true"> <inkscape:grid type="xygrid" id="grid9972" originx="0" originy="0"></inkscape:grid> <sodipodi:guide position="300,360" orientation="1,0" id="guide1208" inkscape:locked="false"></sodipodi:guide> </sodipodi:namedview> <path style="color:#ffffff;fill:#ffffff;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers" d="M 40,0 A 40.004,40.004 0 0 0 0,40 v 520 a 40.004,40.004 0 0 0 40,40 h 520 a 40.004,40.004 0 0 0 40,-40 V 40 A 40.004,40.004 0 0 0 560,0 Z M 80,80 H 520 V 520 H 80 Z" id="path1098"></path> <path style="color:#ffffff;fill:#ffffff;stroke-width:0.999999;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;paint-order:stroke fill markers" d="m 150,110 a 40.004,34.0034 0 0 0 -40,34 v 102 a 40.004,34.0034 0 0 0 40,34 h 80 a 40.004,34.0034 0 0 0 40,-34 V 144 a 40.004,34.0034 0 0 0 -40,-34 z" id="path1093"></path> <path style="color:#ffffff;fill:#ffffff;stroke-linecap:round;-inkscape-stroke:none" d="m 327.04492,120 a 30,30 0 0 0 -30,30 30,30 0 0 0 30,30 H 460 a 30,30 0 0 0 30,-30 30,30 0 0 0 -30,-30 z" id="path450"></path> <path style="color:#ffffff;fill:#ffffff;stroke-linecap:round;-inkscape-stroke:none" d="m 328.18164,220 a 30,30 0 0 0 -30,30 30,30 0 0 0 30,30 h 130.68164 a 30,30 0 0 0 30,-30 30,30 0 0 0 -30,-30 z" id="path450-3"></path> <path style="color:#ffffff;fill:#ffffff;stroke-linecap:round;-inkscape-stroke:none" d="m 141.98242,320 a 30,30 0 0 0 -30,30 30,30 0 0 0 30,30 h 316.03516 a 30,30 0 0 0 30,-30 30,30 0 0 0 -30,-30 z" id="path450-3-6"></path> <path style="color:#ffffff;fill:#ffffff;stroke-linecap:round;-inkscape-stroke:none" d="m 141.98047,420 a 30,30 0 0 0 -30,30 30,30 0 0 0 30,30 H 459.1875 a 30,30 0 0 0 30,-30 30,30 0 0 0 -30,-30 z" id="path450-3-6-7"></path> </g></svg>
+                    
+                    <!-- Box Content -->
+                    <div class="z-20 relative h-full w-full flex flex-col justify-between pl-5 py-6 pr-8">
+                        <div>
+                            <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-deepBlueHead">Payment Pages</h3>
+                            <p class="text-grayText mt-6">Take your store online instantly with zero coding. Accept international & domestic payments</p>
+                        </div>
+                
+                        <div class="items-center py-[14px] flex text-lightBlue cursor-pointer font-mullish font-bold">
+                            <div class="hover:text-grayBlue transition-all duration-200 flex">
+                                <a href="#">Know more</a>
+                                <i data-feather="chevron-right" ></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <svg class="absolute z-30 w-36 h-36 -right-8 -bottom-5 opacity-0 group-hover:opacity-100 transition-all duration-200" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 400"><path d="M195.3404998779297,299.6415710449219C222.1012535858154,272.7329679107666,303.8575316619873,152.2311720275879,357.5268859863281,136.5591278076172C411.19624031066894,120.88708358764649,468.7141502380371,210.5734619140625,520.6093139648438,204.65948486328125C572.5044776916504,198.7455078125,647.0564666748047,117.86737861633301,672.0430297851562,100.71684265136719" fill="none" stroke-width="30" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="butt" transform="matrix(1,0,0,1,-33.69175720214844,-0.17920684814453125)"></path><defs><linearGradient id="SvgjsLinearGradient1000" gradientTransform="rotate(76, 0.5, 0.5)"><stop stop-color="hsl(205, 69%, 60%)" offset="0"></stop><stop stop-color="hsl(205, 69%, 80%)" offset="1"></stop></linearGradient></defs></svg>
+                </div>
+        
+                <!-- Box3 -->
+                <div class="group w-full h-full min-h-[15rem] relative cursor-pointer hover:shadow-lg transition-all duration-3 overflow-hidden">
+                    <!-- Box Shape -->
+                    <svg viewBox="0 0 100 100"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute inset-0 w-full h-full z-10">
+                        <!-- Rectangle with top-right cut -->
+                        <path d="M 0,0 
+                                L 70,0 
+                                L 100,30 
+                                L 100,100 
+                                L 0,100 
+                                Z
+                                M 70,0 
+                                L 100,30" 
+                                fill="white"
+                                stroke="#818597"
+                                stroke-width="0.5"
+                                stroke-opacity="0.2"/>
+                    </svg>
+                
+                    <!-- Image behind the SVG -->
+                    <svg class="group-hover:bg-lightBlue300 absolute right-3 top-3 w-12 h-12 rounded-full z-0 bg-lightBlue transition-all duration-200" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2.6239999999999997"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><circle cx="32" cy="32" r="24"></circle><circle cx="32" cy="32" r="8"></circle></g></svg>
+                
+                    <!-- Box Content -->
+                    <div class="z-20 relative h-full w-full flex flex-col justify-between pl-5 py-6 pr-8">
+                        <div>
+                            <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-deepBlueHead">Payment Buttons</h3>
+                            <p class="text-grayText mt-6">Create, Copy & Collect With Payment
+                                Button. Collect one time or subscription
+                                payments & more</p>
+                        </div>
+                
+                        <div class="items-center py-[14px] flex text-lightBlue cursor-pointer font-mullish font-bold">
+                            <div class="hover:text-grayBlue transition-all duration-200 flex">
+                                <a href="#">Know more</a>
+                                <i data-feather="chevron-right" ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="absolute z-30 w-36 h-36 -right-8 -bottom-5 opacity-0 group-hover:opacity-100 transition-all duration-200" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 400"><path d="M195.3404998779297,299.6415710449219C222.1012535858154,272.7329679107666,303.8575316619873,152.2311720275879,357.5268859863281,136.5591278076172C411.19624031066894,120.88708358764649,468.7141502380371,210.5734619140625,520.6093139648438,204.65948486328125C572.5044776916504,198.7455078125,647.0564666748047,117.86737861633301,672.0430297851562,100.71684265136719" fill="none" stroke-width="30" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="butt" transform="matrix(1,0,0,1,-33.69175720214844,-0.17920684814453125)"></path><defs><linearGradient id="SvgjsLinearGradient1000" gradientTransform="rotate(76, 0.5, 0.5)"><stop stop-color="hsl(205, 69%, 60%)" offset="0"></stop><stop stop-color="hsl(205, 69%, 80%)" offset="1"></stop></linearGradient></defs></svg>
+                </div>
+        
+                <!-- Box4 -->
+                <div class="group w-full h-full min-h-[15rem] relative cursor-pointer hover:shadow-lg transition-all duration-3 overflow-hidden">
+                    <!-- Box Shape -->
+                    <svg viewBox="0 0 100 100"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute inset-0 w-full h-full z-10">
+                        <!-- Rectangle with top-right cut -->
+                        <path d="M 0,0 
+                                L 70,0 
+                                L 100,30 
+                                L 100,100 
+                                L 0,100 
+                                Z
+                                M 70,0 
+                                L 100,30" 
+                                fill="white"
+                                stroke="#818597"
+                                stroke-width="0.5"
+                                stroke-opacity="0.2"/>
+                    </svg>
+                
+                    <!-- Image behind the SVG -->
+                    <svg class="group-hover:bg-lightBlue300 absolute right-3 top-3 w-12 h-12 rounded-full z-0 bg-lightBlue transition-all duration-200" viewBox="-204.8 -204.8 1433.60 1433.60" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M897.9 369.2H205c-33.8 0-61.4-27.6-61.4-61.4s27.6-61.4 61.4-61.4h692.9c33.8 0 61.4 27.6 61.4 61.4s-27.6 61.4-61.4 61.4z" fill="#ffffff"></path><path d="M807 171H703.3c-16.6 0-30 13.4-30 30s13.4 30 30 30H807c31.6 0 57.4 24 57.4 53.4v42.3H125.2v-42.3c0-29.5 25.7-53.4 57.4-53.4H293c16.6 0 30-13.4 30-30s-13.4-30-30-30H182.5c-64.7 0-117.4 50.9-117.4 113.4v527.7c0 62.5 52.7 113.4 117.4 113.4H807c64.7 0 117.4-50.9 117.4-113.4V284.5c0-62.6-52.7-113.5-117.4-113.5z m0 694.6H182.5c-31.6 0-57.4-24-57.4-53.4V386.8h739.2v425.4c0.1 29.5-25.7 53.4-57.3 53.4z" fill="#ffffff45484C"></path><path d="M447.6 217.1c-12.4-6.1-27-2.8-35.7 7.1-2.2-6.7-4-16.2-4-28.1 0-13 2.2-23 4.6-29.8 9.5 8.1 23.5 9.6 34.9 2.8 14.2-8.5 18.8-27 10.3-41.2-15.5-25.9-35.9-29.7-46.6-29.7-36.6 0-63.1 41.2-63.1 97.8s26.4 98 63 98c20.6 0 39-13.4 50.4-36.7 7.3-14.9 1.1-32.9-13.8-40.2zM635.9 218.5c-12.4-6.1-27-2.8-35.7 7.1-2.2-6.7-4-16.2-4-28.1 0-13 2.2-23 4.6-29.8 9.5 8.1 23.5 9.6 34.9 2.8 14.2-8.5 18.8-27 10.3-41.2-15.5-25.9-35.9-29.7-46.6-29.7-36.6 0-63.1 41.2-63.1 97.8s26.5 97.8 63.1 97.8c20.6 0 39-13.4 50.4-36.7 7.1-14.7 0.9-32.7-13.9-40z" fill="#ffffff45484C"></path><path d="M700.2 514.5H200.5c-16.6 0-30 13.4-30 30s13.4 30 30 30h499.7c16.6 0 30-13.4 30-30s-13.5-30-30-30zM668.4 689.8h-74c-16.6 0-30 13.4-30 30s13.4 30 30 30h74c16.6 0 30-13.4 30-30s-13.4-30-30-30zM479.3 689.8H200.5c-16.6 0-30 13.4-30 30s13.4 30 30 30h278.8c16.6 0 30-13.4 30-30s-13.4-30-30-30z" fill="#ffffff33CC99"></path></g></svg>
+    
+                    <!-- Box Content -->
+                    <div class="z-20 relative h-full w-full flex flex-col justify-between pl-5 py-6 pr-8">
+                        <div>
+                            <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-deepBlueHead">Subscription</h3>
+                            <p class="text-grayText mt-6">Subscription plans with automated
+                                recurring transactions on various
+                                payment modes.</p>
+                        </div>
+                
+                        <div class="items-center py-[14px] flex text-lightBlue cursor-pointer font-mullish font-bold">
+                            <div class="hover:text-grayBlue transition-all duration-200 flex">
+                                <a href="#">Know more</a>
+                                <i data-feather="chevron-right" ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="absolute z-30 w-36 h-36 -right-8 -bottom-5 opacity-0 group-hover:opacity-100 transition-all duration-200" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 400"><path d="M195.3404998779297,299.6415710449219C222.1012535858154,272.7329679107666,303.8575316619873,152.2311720275879,357.5268859863281,136.5591278076172C411.19624031066894,120.88708358764649,468.7141502380371,210.5734619140625,520.6093139648438,204.65948486328125C572.5044776916504,198.7455078125,647.0564666748047,117.86737861633301,672.0430297851562,100.71684265136719" fill="none" stroke-width="30" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="butt" transform="matrix(1,0,0,1,-33.69175720214844,-0.17920684814453125)"></path><defs><linearGradient id="SvgjsLinearGradient1000" gradientTransform="rotate(76, 0.5, 0.5)"><stop stop-color="hsl(205, 69%, 60%)" offset="0"></stop><stop stop-color="hsl(205, 69%, 80%)" offset="1"></stop></linearGradient></defs></svg>
+    
+                </div>
+        
+                <!-- Box5 -->
+                <div class="group w-full h-full min-h-[15rem] relative cursor-pointer hover:shadow-lg transition-all duration-3 overflow-hidden">
+                    <!-- Box Shape -->
+                    <svg viewBox="0 0 100 100"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute inset-0 w-full h-full z-10">
+                        <!-- Rectangle with top-right cut -->
+                        <path d="M 0,0 
+                                L 70,0 
+                                L 100,30 
+                                L 100,100 
+                                L 0,100 
+                                Z
+                                M 70,0 
+                                L 100,30" 
+                                fill="white"
+                                stroke="#818597"
+                                stroke-width="0.5"
+                                stroke-opacity="0.2"/>
+                    </svg>
+                
+                    <!-- Image behind the SVG -->
+                    <svg class="group-hover:bg-lightBlue300 absolute right-3 top-3 w-12 h-12 rounded-full z-0 bg-lightBlue transition-all duration-200" viewBox="-3.6 -3.6 31.20 31.20" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.96 4.13a.75.75 0 0 1 .369-1.264l4.767-1.045a.75.75 0 0 1 .893.893l-1.046 4.767a.75.75 0 0 1-1.262.37L6.959 4.129zm6.737 18.465a3.1 3.1 0 1 0 0-6.2 3.1 3.1 0 0 0 0 6.2zM7.407 7.403a1 1 0 0 0-1.414 0L3.69 9.705a4.246 4.246 0 0 0 0 6.005l.004.003a4.253 4.253 0 0 0 6.01-.003l6.005-6.005c.88-.88 2.305-.88 3.185-.002.878.876.879 2.298.003 3.176l-.002.001-1.77 1.77a1 1 0 0 0 1.414 1.415l1.77-1.77.004-.004a4.246 4.246 0 0 0-.007-6.004 4.253 4.253 0 0 0-6.01.003L8.29 14.295c-.879.88-2.304.88-3.185 0a2.246 2.246 0 0 1 0-3.175l2.302-2.303a1 1 0 0 0 0-1.414z" fill="#ffffff"></path></g></svg>
+    
+                    <!-- Box Content -->
+                    <div class="z-20 relative h-full w-full flex flex-col justify-between pl-5 py-6 pr-8">
+                        <div>
+                            <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-deepBlueHead">Route</h3>
+                            <p class="text-grayText mt-6">Split incoming payments auto- matically
+                                to vendor's accounts, manage
+                                marketplace money flow...</p>
+                        </div>
+                
+                        <div class="items-center py-[14px] flex text-lightBlue cursor-pointer font-mullish font-bold">
+                            <div class="hover:text-grayBlue transition-all duration-200 flex">
+                                <a href="#">Know more</a>
+                                <i data-feather="chevron-right" ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="absolute z-30 w-36 h-36 -right-8 -bottom-5 opacity-0 group-hover:opacity-100 transition-all duration-200" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 400"><path d="M195.3404998779297,299.6415710449219C222.1012535858154,272.7329679107666,303.8575316619873,152.2311720275879,357.5268859863281,136.5591278076172C411.19624031066894,120.88708358764649,468.7141502380371,210.5734619140625,520.6093139648438,204.65948486328125C572.5044776916504,198.7455078125,647.0564666748047,117.86737861633301,672.0430297851562,100.71684265136719" fill="none" stroke-width="30" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="butt" transform="matrix(1,0,0,1,-33.69175720214844,-0.17920684814453125)"></path><defs><linearGradient id="SvgjsLinearGradient1000" gradientTransform="rotate(76, 0.5, 0.5)"><stop stop-color="hsl(205, 69%, 60%)" offset="0"></stop><stop stop-color="hsl(205, 69%, 80%)" offset="1"></stop></linearGradient></defs></svg>
+    
+                </div>
+        
+                <!-- Box6 -->
+                <div class="group w-full h-full min-h-[15rem] relative cursor-pointer hover:shadow-lg transition-all duration-3 overflow-hidden">
+                    <!-- Box Shape -->
+                    <svg viewBox="0 0 100 100"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute inset-0 w-full h-full z-10">
+                        <!-- Rectangle with top-right cut -->
+                        <path d="M 0,0 
+                                L 70,0 
+                                L 100,30 
+                                L 100,100 
+                                L 0,100 
+                                Z
+                                M 70,0 
+                                L 100,30" 
+                                fill="white"
+                                stroke="#818597"
+                                stroke-width="0.5"
+                                stroke-opacity="0.2"/>
+                    </svg>
+                
+                    <!-- Image behind the SVG -->
+                    <svg class="group-hover:bg-lightBlue300 absolute right-3 top-3 w-12 h-12 rounded-full z-0 bg-lightBlue transition-all duration-200" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18 12H15M21 8H3M18 16H15M13 19C12.6218 17.2883 10.9747 16 9 16C7.03262 16 5.39034 17.2788 5.00424 18.9811M9 12H9.01M5.00424 18.9811C5.31776 19 5.70396 19 6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.33038 18.9035 4.60979 18.9572 5.00424 18.9811ZM10 12C10 12.5523 9.55228 13 9 13C8.44772 13 8 12.5523 8 12C8 11.4477 8.44772 11 9 11C9.55228 11 10 11.4477 10 12Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+    
+                    <!-- Box Content -->
+                    <div class="z-20 relative h-full w-full flex flex-col justify-between pl-5 py-6 pr-8">
+                        <div>
+                            <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-deepBlueHead">Smart Collect</h3>
+                            <p class="text-grayText mt-6">Automatically reconcile incoming NEFT,
+                                RTGS, IMPS, UPI payments using Virtual
+                                Accounts & UPI-lDs</p>
+                        </div>
+                
+                        <div class="items-center py-[14px] flex text-lightBlue cursor-pointer font-mullish font-bold">
+                            <div class="hover:text-grayBlue transition-all duration-200 flex">
+                                <a href="#">Know more</a>
+                                <i data-feather="chevron-right" ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="absolute z-30 w-36 h-36 -right-8 -bottom-5 opacity-0 group-hover:opacity-100 transition-all duration-200" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 400"><path d="M195.3404998779297,299.6415710449219C222.1012535858154,272.7329679107666,303.8575316619873,152.2311720275879,357.5268859863281,136.5591278076172C411.19624031066894,120.88708358764649,468.7141502380371,210.5734619140625,520.6093139648438,204.65948486328125C572.5044776916504,198.7455078125,647.0564666748047,117.86737861633301,672.0430297851562,100.71684265136719" fill="none" stroke-width="30" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="butt" transform="matrix(1,0,0,1,-33.69175720214844,-0.17920684814453125)"></path><defs><linearGradient id="SvgjsLinearGradient1000" gradientTransform="rotate(76, 0.5, 0.5)"><stop stop-color="hsl(205, 69%, 60%)" offset="0"></stop><stop stop-color="hsl(205, 69%, 80%)" offset="1"></stop></linearGradient></defs></svg>
+    
+                </div>
+            </div>
+        </section>
+    
+        <!-- feature section 2 -->
+        <section class="font-mullish bg-deepBlue mt-[7rem] relative">
+            <!-- shape -->
+            <div class="absolute w-full h-[112px] z-10 bg-white top-[-6rem]">
+                <svg viewBox="0 0 100 100" width="110%" height="115px" preserveAspectRatio="none">
+                    <polygon points="0,0 100,100 0,100" fill="#02042a" />
+                </svg>
+            </div>
+    
+            <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+                <!-- <img src="./images/feature-2-lightning-2.png" alt="" class="absolute h-[12rem] top-[5rem] left-[11rem]"> -->
+
+                <img src="./images/feature-2-lightning.png" alt="" class="absolute right-[-10.5rem] bottom-[1rem] h-[12rem] [@media(max-width:900px)]:hidden">
+                <img src="./images/feature-2-lightning-2.png" alt="" class="absolute h-[12rem] top-[-2.2rem] left-[-9rem] z-20 [@media(max-width:900px)]:hidden">
+
+                <!-- heading -->
+                <h1 class="font-mullish font-bold text-center text-2xl leading-[1.2] text-white">Explore Razorpay Business Banking</h1>
+                <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+    
+                <!-- content box -->
+                <div class="w-full bg-deepBlue text-white flex rounded-md relative p-10 pt-12 border-lightGray border-[2px] border-opacity-20 min-h-[520px] z-20">
+                    <div class="flex flex-col justify-between items-start w-full z-10">
+                        <h3 class="font-mullish font-bold text-[1.8rem] leading-10 max-w-[500px]">Manage you company's finances with  
+                            <span>
+                                <img src="./images/logo-razorpay-x.png" alt="RazorpayX" class="inline-block" height="20px" width="150px">
+                            </span>
+                            <span class="text-greenLight">Business Banking</span>
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center font-mullish space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>Open a fully digital current account</span>
+                            </li>
+                            <li class="flex items-center font-mullish space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>Automate payable & compliment payments</span>
+                            </li>
+                            <li class="flex items-center font-mullish space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>Simplify and track spends with Corporate cards</span>
+                            </li>
+                            <li class="flex items-center font-mullish space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>View financial insights at a glance</span>
+                            </li>
+                        </ul>
+    
+                        <div class="flex items-start space-x-4 justify-start [@media(max-width:410px)]:flex-col-reverse">
+                            <button class="w-fit text-white bg-lightBlue py-[14px] px-[18px] rounded-md font-mullish font-bold
+                             hover:bg-lightBlue500 transition-all duration-200 flex gap-x-1 relative">
+                                <p class="z-10">Sign Up</p>
+                                <div class="w-10 h-[56px] bg-greenLight absolute right-[1.35rem] top-[-0.1rem] skew-x-[20deg] z-0"></div>                      
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" fill="white" viewBox="0 0 24 24" class="z-10">
+                                    <path d="M6 12h10M14 8l4 4-4 4" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>       
+                            </button>
+                            <div class="items-center justify-center py-[14px] flex text-lightBlue hover:text-grayBlue transition-all
+                            duration-200 cursor-pointer font-mullish font-bold">
+                                <a href="#">Know more</a>
+                                <i data-feather="chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <img src="./images/feature-2.png" alt=""
+                    class="h-[32rem] absolute bottom-0 right-0 overflow-hidden pointer-events-none z-0 [@media(max-width:1125px)]:h-[25rem] [@media(max-width:900px)]:hidden">
+                </div>
+            </div>
+    
+            <!-- card section --> 
+            <div class="grid grid-cols-3 relative w-11/12 max-w-[1080px] mx-auto pt-4 gap-4 mt-[2rem] [@media(max-width:760px)]:grid-cols-1">
+                <!-- Box1 -->
+                <div class="group w-full h-full min-h-[15rem] relative cursor-pointer hover:shadow-lg transition-all duration-300 overflow-hidden">
+                    <!-- Box Shape -->
+                    <svg viewBox="0 0 100 100"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute inset-0 w-full h-full z-10 ">
+                        <!-- Rectangle with top-right cut -->
+                        <path d="M 0,0 
+                                L 70,0 
+                                L 100,30 
+                                L 100,100 
+                                L 0,100 
+                                Z
+                                M 70,0 
+                                L 100,30" 
+                                fill="#02042a"
+                                stroke="#818597"
+                                stroke-width="0.5"
+                                stroke-opacity="0.2"/>
+                    </svg>
+                
+                    <!-- Image behind the SVG -->
+                    <svg class="absolute right-3 top-3 w-12 h-12 rounded-full z-0 bg-lightBlue transition-all duration-200 group-hover:bg-lightBlue300" viewBox="-4.08 -4.08 32.16 32.16" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 21.0001H21M4 18.0001H20M6 18.0001V13.0001M10 18.0001V13.0001M14 18.0001V13.0001M18 18.0001V13.0001M12 7.00695L12.0074 7.00022M21 10.0001L14.126 3.88986C13.3737 3.2212 12.9976 2.88688 12.5732 2.75991C12.1992 2.64806 11.8008 2.64806 11.4268 2.75991C11.0024 2.88688 10.6263 3.2212 9.87404 3.88986L3 10.0001H21Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+    
+                    <!-- Box Content -->
+                    <div class="z-20 relative h-full w-full flex flex-col justify-between pl-5 py-6 pr-8">
+                        <div>
+                            <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-white">Current Account</h3>
+                            <p class="text-grayText mt-6">Current Accounts for fast growing businesses, supported by the best-in-class technology</p>
+                        </div>
+                
+                        <div class="items-center py-[14px] flex text-lightBlue cursor-pointer font-mullish font-bold">
+                            <div class="hover:text-grayBlue transition-all duration-200 flex">
+                                <a href="#">Know more</a>
+                                <i data-feather="chevron-right" ></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <svg class="absolute z-30 w-36 h-36 -right-8 -bottom-5 opacity-0 group-hover:opacity-100 transition-all duration-200" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 400"><path d="M165.77061462402344,313.0824279785156C165.77061462402344,313.0824279785156,331.5412292480469,189.426513671875,331.5412292480469,189.426513671875C331.5412292480469,189.426513671875,500,270.0716857910156,500,270.0716857910156C500,270.0716857910156,651.4337158203125,136.5591278076172,651.4337158203125,136.5591278076172" fill="none" stroke-width="25" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="butt"></path><defs><linearGradient id="SvgjsLinearGradient1000"><stop stop-color="#02042a" offset="0"></stop><stop stop-color="#2b84ea" offset="1"></stop></linearGradient></defs></svg>   
+                </div>
+                
+                <!-- Box2 -->
+                <div class="group w-full h-full min-h-[15rem] relative cursor-pointer hover:shadow-lg transition-all duration-300 overflow-hidden">
+                    <!-- Box Shape -->
+                    <svg viewBox="0 0 100 100"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute inset-0 w-full h-full z-10">
+                        <!-- Rectangle with top-right cut -->
+                        <path d="M 0,0 
+                                L 70,0 
+                                L 100,30 
+                                L 100,100 
+                                L 0,100 
+                                Z
+                                M 70,0 
+                                L 100,30" 
+                                fill="#02042a"
+                                stroke="#818597"
+                                stroke-width="0.5"
+                                stroke-opacity="0.2"/>
+                    </svg>
+                
+                    <!-- Image behind the SVG -->
+                    <svg class="absolute right-3 top-3 w-12 h-12 rounded-full z-0 bg-lightBlue transition-all duration-200 group-hover:bg-lightBlue300" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9.28 -9.28 50.56 50.56" enable-background="new 0 0 32 32" xml:space="preserve" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="#ffffff" d="M32,8.5C32,7.673,31.327,7,30.5,7H26V1.908c0-0.743-0.222-1.282-0.658-1.603 c-0.486-0.355-1.176-0.396-2.041-0.123L0.359,6.883c-0.24,0.07-0.378,0.306-0.345,0.547C0.011,7.454,0,7.475,0,7.5v23 C0,31.327,0.673,32,1.5,32h29c0.827,0,1.5-0.673,1.5-1.5V8.5z M31,24h-9.5c-0.275,0-0.5-0.224-0.5-0.5v-8 c0-0.276,0.225-0.5,0.5-0.5H31V24z M23.592,1.139c0.538-0.169,0.951-0.181,1.158-0.028C24.957,1.263,25,1.628,25,1.908V7H3.526 L23.592,1.139z M30.5,31h-29C1.225,31,1,30.776,1,30.5V8h29.5C30.775,8,31,8.224,31,8.5V14h-9.5c-0.827,0-1.5,0.673-1.5,1.5v8 c0,0.827,0.673,1.5,1.5,1.5H31v5.5C31,30.776,30.775,31,30.5,31z"></path> <path fill="#ffffff" d="M25.351,21.605c1.193,0,2.165-0.971,2.165-2.164s-0.972-2.165-2.165-2.165s-2.164,0.971-2.164,2.165 S24.157,21.605,25.351,21.605z M25.351,18.277c0.643,0,1.165,0.522,1.165,1.165s-0.522,1.164-1.165,1.164 c-0.642,0-1.164-0.522-1.164-1.164S24.709,18.277,25.351,18.277z"></path> </g> </g></svg>
+    
+                    <!-- Box Content -->
+                    <div class="z-20 relative h-full w-full flex flex-col justify-between pl-5 py-6 pr-8">
+                        <div>
+                            <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-white">Capital & Credit</h3>
+                            <p class="text-grayText mt-6">Instant additional cash and corporate cards designed for growing businesses</p>
+                        </div>
+                
+                        <div class="items-center py-[14px] flex text-lightBlue cursor-pointer font-mullish font-bold">
+                            <div class="hover:text-grayBlue transition-all duration-200 flex">
+                                <a href="#">Know more</a>
+                                <i data-feather="chevron-right" ></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <svg class="absolute z-30 w-36 h-36 -right-8 -bottom-5 opacity-0 group-hover:opacity-100 transition-all duration-200" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 400"><path d="M165.77061462402344,313.0824279785156C165.77061462402344,313.0824279785156,331.5412292480469,189.426513671875,331.5412292480469,189.426513671875C331.5412292480469,189.426513671875,500,270.0716857910156,500,270.0716857910156C500,270.0716857910156,651.4337158203125,136.5591278076172,651.4337158203125,136.5591278076172" fill="none" stroke-width="25" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="butt"></path><defs><linearGradient id="SvgjsLinearGradient1000"><stop stop-color="#02042a" offset="0"></stop><stop stop-color="#2b84ea" offset="1"></stop></linearGradient></defs></svg>   
+                </div>
+    
+                <!-- Box3 -->
+                <div class="group w-full h-full min-h-[15rem] relative cursor-pointer hover:shadow-lg transition-all duration-300 overflow-hidden">
+                    <!-- Box Shape -->
+                    <svg viewBox="0 0 100 100"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute inset-0 w-full h-full z-10">
+                        <!-- Rectangle with top-right cut -->
+                        <path d="M 0,0 
+                                L 70,0 
+                                L 100,30 
+                                L 100,100 
+                                L 0,100 
+                                Z
+                                M 70,0 
+                                L 100,30" 
+                                fill="#02042a"
+                                stroke="#818597"
+                                stroke-width="0.5"
+                                stroke-opacity="0.2"/>
+                    </svg>
+                
+                    <!-- Image behind the SVG -->
+                    <svg class="absolute right-3 top-3 w-12 h-12 rounded-full z-0 bg-lightBlue transition-all duration-200 group-hover:bg-lightBlue300" viewBox="-3.12 -3.12 30.24 30.24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 17.4998C6.41783 17.186 6.9372 17 7.5 17C8.88071 17 10 18.1193 10 19.5C10 20.0628 9.81403 20.5822 9.50018 21M18 17.4998C17.5822 17.186 17.0628 17 16.5 17C15.1193 17 14 18.1193 14 19.5C14 20.0628 14.186 20.5822 14.4998 21M17.9999 9.99995C18.9883 9.99918 19.5064 9.98663 19.908 9.78201C20.2843 9.59027 20.5903 9.28431 20.782 8.90798C21 8.48016 21 7.9201 21 6.8V6.2C21 5.0799 21 4.51984 20.782 4.09202C20.5903 3.71569 20.2843 3.40973 19.908 3.21799C19.4802 3 18.9201 3 17.8 3H6.2C5.0799 3 4.51984 3 4.09202 3.21799C3.71569 3.40973 3.40973 3.71569 3.21799 4.09202C3 4.51984 3 5.0799 3 6.2V6.8C3 7.9201 3 8.48016 3.21799 8.90798C3.40973 9.28431 3.71569 9.59027 4.09202 9.78201C4.49359 9.98663 5.01167 9.99918 6.00005 9.99995M17.9999 9.99995C18 10.0646 18 10.1312 18 10.2V17.8C18 18.9201 18 19.4802 17.782 19.908C17.5903 20.2843 17.2843 20.5903 16.908 20.782C16.4802 21 15.9201 21 14.8 21H9.2C8.07989 21 7.51984 21 7.09202 20.782C6.71569 20.5903 6.40973 20.2843 6.21799 19.908C6 19.4802 6 18.9201 6 17.8V10.2C6 10.1312 6 10.0646 6.00005 9.99995M17.9999 9.99995C17.9992 9.01163 17.9866 8.49358 17.782 8.09202C17.5903 7.71569 17.2843 7.40973 16.908 7.21799C16.4802 7 15.9201 7 14.8 7H9.2C8.0799 7 7.51984 7 7.09202 7.21799C6.71569 7.40973 6.40973 7.71569 6.21799 8.09202C6.01338 8.49358 6.00082 9.01163 6.00005 9.99995M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+    
+                    <!-- Box Content -->
+                    <div class="z-20 relative h-full w-full flex flex-col justify-between pl-5 py-6 pr-8">
+                        <div>
+                            <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-white">Payouts</h3>
+                            <p class="text-grayText mt-6">Make simple, reliable & secure payouts to bank accounts, UPI IDs or wallets</p>
+                        </div>
+                
+                        <div class="items-center py-[14px] flex text-lightBlue cursor-pointer font-mullish font-bold">
+                            <div class="hover:text-grayBlue transition-all duration-200 flex">
+                                <a href="#">Know more</a>
+                                <i data-feather="chevron-right" ></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <svg class="absolute z-30 w-36 h-36 -right-8 -bottom-5 opacity-0 group-hover:opacity-100 transition-all duration-200" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 400"><path d="M165.77061462402344,313.0824279785156C165.77061462402344,313.0824279785156,331.5412292480469,189.426513671875,331.5412292480469,189.426513671875C331.5412292480469,189.426513671875,500,270.0716857910156,500,270.0716857910156C500,270.0716857910156,651.4337158203125,136.5591278076172,651.4337158203125,136.5591278076172" fill="none" stroke-width="25" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="butt"></path><defs><linearGradient id="SvgjsLinearGradient1000"><stop stop-color="#02042a" offset="0"></stop><stop stop-color="#2b84ea" offset="1"></stop></linearGradient></defs></svg>   
+                </div>
+            </div>
+    
+            <!-- description -->
+            <div class="border-lightGray border-[2px] border-opacity-20 max-w-[1080px] w-11/12 relative mx-auto mt-[3rem] items-center justify-center flex py-8 gap-x-6 text-lg [@media(max-width:1025px)]:flex-col">
+                <p class="text-white items-center justify-center text-center">
+                    Check out the live demo to learn how RazorpayX works. 
+                    <span class="font-bold">
+                        No sign-up required!
+                    </span>
+                </p>
+    
+                <button class="w-fit text-white bg-lightBlue py-[14px] px-[18px] rounded-md font-mullish font-bold
+                    hover:bg-lightBlue500 transition-all duration-200 flex gap-x-1 relative [@media(max-width:1025px)]:mt-4">
+                    <p class="z-10">Check out the demo</p>
+                    <div class="w-10 h-[60px] bg-greenLight absolute right-[1.35rem] top-[-0.15rem] skew-x-[20deg] z-0"></div>                      
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" fill="white" viewBox="0 0 24 24" class="z-10">
+                        <path d="M6 12h10M14 8l4 4-4 4" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>       
+                </button>
+            </div>    
+    
+            <!-- shape -->
+            <div class="mt-[5rem] [@media(max-width:760px)]:mt-0">
+                  <svg width="100%" height="300px" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                
+                    <!-- Light blue triangle (on top) -->
+                    <polygon points="12,95 55,0 99,34" fill="#f1f5fd" class="[@media(max-width:760px)]:hidden"/>
+    
+                    <!-- White triangle (bottom) -->
+                    <polygon points="0,100 100,30 100,100" fill="white" />
+                    
+                </svg>
+            </div>
+        </section>
+    
+        <!-- feature section 3 -->
+        <section class="font-mullish grid grid-cols-1 max-w-[1080px] w-11/12 mx-auto gap-4 mt-4 relative [@media(min-width:900px)]:grid-cols-3 [@media(min-width:615px)]:grid-cols-2">
+            <!-- images -->
+            <div class="absolute z-0 left-[20rem] -top-20 rotate-180 [@media(max-width:1025px)]:hidden">
+                <img src="./images/right-dot.png" alt="">
+            </div>
+    
+            <div class="absolute z-0 -right-[4rem] -top-20 rotate-180 [@media(max-width:1025px)]:hidden">
+                <img src="./images/right-dot.png" alt="">
+            </div>
+    
+            <!-- Discription -->
+            <div class="z-10 flex flex-col justify-center">
+                <h3 class="text-deepBlueHead font-bold text-start text-4xl leading-[1.2]">
+                    New in the
+                </h3>
+                <h3 class="text-lightBlue font-bold text-start text-4xl leading-[1.2]">
+                    Razorpay
+                </h3>
+                <h3 class="text-deepBlueHead font-bold text-start text-4xl leading-[1.2]">
+                    Product Suite
+                </h3>
+            </div>
+    
+            <!-- box1 -->
+            <div class="z-10 bg-white group w-full h-full min-h-[15rem] relative cursor-pointer shadow-lg overflow-hidden flex flex-col justify-start items-start px-11 pt-10 pb-4 hover:scale-105 transition-all duration-200">            
+                <div class="z-10">
+                    <svg class="w-10 h-10 rounded-full bg-lightBlue" viewBox="-3.6 -3.6 31.20 31.20" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 12.6101H19" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M19 10.28V17.43C18.97 20.28 18.19 21 15.22 21H5.78003C2.76003 21 2 20.2501 2 17.2701V10.28C2 7.58005 2.63 6.71005 5 6.57005C5.24 6.56005 5.50003 6.55005 5.78003 6.55005H15.22C18.24 6.55005 19 7.30005 19 10.28Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M22 6.73V13.72C22 16.42 21.37 17.29 19 17.43V10.28C19 7.3 18.24 6.55 15.22 6.55H5.78003C5.50003 6.55 5.24 6.56 5 6.57C5.03 3.72 5.81003 3 8.78003 3H18.22C21.24 3 22 3.75 22 6.73Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M5.25 17.8101H6.96997" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M9.10986 17.8101H12.5499" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+                <div class="z-10">
+                    <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-deepBlueHead mt-4">Corporate Cards</h3>
+                    <p class="text-grayText mt-4">
+                        Simplify your recurring, international
+                        and team expenses with savings on
+                        every spend. Save upto 10 lacs
+                        every month.
+                    </p>
+    
+                    <div class="items-center pb-4 pt-2 flex text-lightBlue cursor-pointer font-mullish font-bold">
+                        <div class="hover:text-grayBlue transition-all duration-200 flex">
+                            <a href="#">Know more</a>
+                            <i data-feather="chevron-right" ></i>
+                        </div>
+                    </div>     
+                </div>     
+            </div>
+    
+            <!-- box2 -->
+            <div class="z-10 bg-white group w-full h-full min-h-[15rem] relative cursor-pointer shadow-lg overflow-hidden flex flex-col justify-start items-start px-11 pt-10 pb-4 hover:scale-105 transition-all duration-200">            
+                <div>
+                    <svg class="w-10 h-10 rounded-full bg-lightBlue" viewBox="-8.32 -8.32 80.64 80.64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#ffffff" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M50.93,34.13v7.93a2.75,2.75,0,0,1-2.75,2.76H12.09A2.85,2.85,0,0,1,9.24,42V18a1.8,1.8,0,0,1,1.81-1.8H29.1"></path><path d="M51.39,50.87H9.48a4.11,4.11,0,0,1-4.12-4.12V44.82H55v2.4A3.65,3.65,0,0,1,51.39,50.87Z"></path><path d="M31.64,13.13H56.5a2.14,2.14,0,0,1,2.14,2.14V31.66A2.14,2.14,0,0,1,56.5,33.8H30.77a2.14,2.14,0,0,1-2.14-2.14V16.13A3,3,0,0,1,31.64,13.13Z"></path><line x1="28.63" y1="17.53" x2="58.64" y2="17.53"></line><line x1="28.63" y1="21.36" x2="58.64" y2="21.36"></line><path d="M52.9,25.77a2.35,2.35,0,0,0-1.42.49,2.37,2.37,0,0,0-1.43-.49,2.33,2.33,0,1,0,0,4.66,2.37,2.37,0,0,0,1.43-.49,2.33,2.33,0,1,0,1.42-4.17Z"></path></g></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-deepBlueHead mt-4">UPI AutoPay</h3>
+                    <p class="text-grayText mt-4">
+                        Allow customers to send up recurring payments using UPI Apps.
+                    </p>
+    
+                    <div class="items-center pb-4 pt-2 flex text-lightBlue cursor-pointer font-mullish font-bold">
+                        <div class="hover:text-grayBlue transition-all duration-200 flex">
+                            <a href="#">Know more</a>
+                            <i data-feather="chevron-right" ></i>
+                        </div>
+                    </div>     
+                </div>
+        
+            </div>
+    
+            <!-- box3 -->
+            <div class="group w-full h-full min-h-[15rem] relative cursor-pointer shadow-lg overflow-hidden flex flex-col justify-start items-start px-11 pt-10 pb-4 hover:scale-105 transition-all duration-200">            
+                <div>
+                    <svg class="w-10 h-10 rounded-full bg-lightBlue" viewBox="-4.08 -4.08 32.16 32.16" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.2998 5H22L20 12H8.37675M21 16H9L7 3H4M4 8H2M5 11H2M6 14H2M10 20C10 20.5523 9.55228 21 9 21C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19C9.55228 19 10 19.4477 10 20ZM21 20C21 20.5523 20.5523 21 20 21C19.4477 21 19 20.5523 19 20C19 19.4477 19.4477 19 20 19C20.5523 19 21 19.4477 21 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-deepBlueHead mt-4">Magic Checkout</h3>
+                    <p class="text-grayText mt-4">
+                        Improve your order conversion rates
+                        & reduce return-to-origins. Boost
+                        your business by 20%
+                    </p>
+    
+                    <div class="items-center pb-4 pt-2 flex text-lightBlue cursor-pointer font-mullish font-bold">
+                        <div class="hover:text-grayBlue transition-all duration-200 flex">
+                            <a href="#">Know more</a>
+                            <i data-feather="chevron-right" ></i>
+                        </div>
+                    </div>     
+                </div>
+        
+            </div>
+    
+            <!-- box4 -->
+            <div class="group w-full h-full min-h-[15rem] relative cursor-pointer shadow-lg overflow-hidden flex flex-col justify-start items-start px-11 pt-10 pb-4 hover:scale-105 transition-all duration-200">            
+                <div>
+                    <svg  class="w-10 h-10 rounded-full bg-lightBlue"fill="#ffffff" height="200px" width="200px" version="1.1" id="XMLID_21_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-4.56 -4.56 33.12 33.12" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="payment-square"> <g> <path d="M17,22H7c-2.8,0-5-2.2-5-5V7c0-2.8,2.2-5,5-5h10c2.8,0,5,2.2,5,5v10C22,19.7,19.8,22,17,22z M7,4C5.3,4,4,5.3,4,7v10 c0,1.7,1.3,3,3,3h10c1.7,0,3-1.3,3-3V7c0-1.7-1.3-3-3-3H7z"></path> </g> <g> <path d="M14,9h-4c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h4c0.6,0,1-0.4,1-1v-4C15,9.4,14.6,9,14,9z"></path> </g> </g> </g></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-deepBlueHead mt-4">Payment Button</h3>
+                    <p class="text-grayText mt-4">
+                        Accept payments on your website, in less than 5 minutes. No developer needed
+                    </p>
+    
+                    <div class="items-center pb-4 pt-2 flex text-lightBlue cursor-pointer font-mullish font-bold">
+                        <div class="hover:text-grayBlue transition-all duration-200 flex">
+                            <a href="#">Know more</a>
+                            <i data-feather="chevron-right" ></i>
+                        </div>
+                    </div>     
+                </div>
+        
+            </div>
+    
+            <!-- box5 -->
+            <div class="group w-full h-full min-h-[15rem] relative cursor-pointer shadow-lg overflow-hidden flex flex-col justify-start items-start px-11 pt-10 pb-4 hover:scale-105 transition-all duration-200">            
+                <div>
+                    <svg class="w-10 h-10 rounded-full bg-lightBlue" viewBox="-5.52 -5.52 35.04 35.04" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9.5 21.5V18.5C9.5 17.5654 9.5 17.0981 9.70096 16.75C9.83261 16.522 10.022 16.3326 10.25 16.201C10.5981 16 11.0654 16 12 16C12.9346 16 13.4019 16 13.75 16.201C13.978 16.3326 14.1674 16.522 14.299 16.75C14.5 17.0981 14.5 17.5654 14.5 18.5V21.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M21 22H9M3 22H5.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M19 22V15" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M5 22V15" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M11.9999 2H7.47214C6.26932 2 5.66791 2 5.18461 2.2987C4.7013 2.5974 4.43234 3.13531 3.89443 4.21114L2.49081 7.75929C2.16652 8.57905 1.88279 9.54525 2.42867 10.2375C2.79489 10.7019 3.36257 11 3.99991 11C5.10448 11 5.99991 10.1046 5.99991 9C5.99991 10.1046 6.89534 11 7.99991 11C9.10448 11 9.99991 10.1046 9.99991 9C9.99991 10.1046 10.8953 11 11.9999 11C13.1045 11 13.9999 10.1046 13.9999 9C13.9999 10.1046 14.8953 11 15.9999 11C17.1045 11 17.9999 10.1046 17.9999 9C17.9999 10.1046 18.8953 11 19.9999 11C20.6373 11 21.205 10.7019 21.5712 10.2375C22.1171 9.54525 21.8334 8.57905 21.5091 7.75929L20.1055 4.21114C19.5676 3.13531 19.2986 2.5974 18.8153 2.2987C18.332 2 17.7306 2 16.5278 2H16" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+                <div>
+                    <h3 class="font-bold text-[1.375rem] leading-[1.2] max-w-[500px] text-deepBlueHead mt-4">Vendor Payments</h3>
+                    <p class="text-grayText mt-4">
+                        Automate and simplify your vendor payments with seamless bank transfers, bulk payouts, and intelligent tracking.
+                    </p>
+    
+                    <div class="items-center pb-4 pt-2 flex text-lightBlue cursor-pointer font-mullish font-bold">
+                        <div class="hover:text-grayBlue transition-all duration-200 flex">
+                            <a href="#">Know more</a>
+                            <i data-feather="chevron-right" ></i>
+                        </div>
+                    </div>     
+                </div>
+        
+            </div>
+        </section>
+    
+        <!-- feature section 4 -->
+        <section class="relative font-mullish max-w-full bg-[#1659b5]">
+            <!-- shape -->
+            <div class="mt-[5rem] bg-white w-full h-full">
+                  <svg width="100%" height="300" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                
+                    <!-- Light blue triangle (on top) -->
+                    <polygon points="0,100 0,0 70,68" fill="#f1f5fd" />
+    
+                    <!-- White triangle (bottom) -->
+                    <polygon points="-12,110 100,10 100,110" fill="#1659b5"/>
+                    
+                </svg>
+            </div>
+    
+            <div class="max-w-[1080px] w-10/12 mx-auto bg-inherit">
+                <!-- heading -->
+                <h1 class="font-mullish font-bold text-center text-2xl leading-[1.2] text-white">Features</h1>
+                <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+    
+                <!-- description -->
+                <div class="flex justify-center">
+                    <p class="flex text-center text-white w-[26.5rem]">Enpower you business with all the right tools to accept online payments and provide the best customer experience</p>        
+                </div>
+    
+                <div class="grid grid-cols-1 gap-0 [@media(min-width:945px)]:grid-cols-4 [@media(min-width:480px)]:grid-cols-2">
+                    <!-- box1 -->
+                    <div class="z-10 group w-full h-full min-h-[15rem] relative cursor-pointer overflow-hidden flex flex-col justify-start items-start px-4 pt-10 pb-4">            
+                     
+                        <svg class="w-10 h-10" viewBox="0 0 36.00 36.00" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="0" y="0" width="36.00" height="36.00" rx="18" fill="#4b94ed" />
+                            </g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill="#02042a" d="M1 17l8-7l16 1l1 16l-7 8s.001-5.999-6-12s-12-6-12-6z" />
+                                <path fill="#ffffff" d="M.973 35s-.036-7.979 2.985-11S15 21.187 15 21.187S14.999 29 11.999 32c-3 3-11.026 3-11.026 3z" />
+                                <circle fill="#ffffff" cx="8.999" cy="27" r="4" />
+                                <path fill="#ffffff" d="M35.999 0s-10 0-22 10c-6 5-6 14-4 16s11 2 16-4c10-12 10-22 10-22z" />
+                                <path fill="#02042a" d="M26.999 5a3.996 3.996 0 0 0-3.641 2.36A3.969 3.969 0 0 1 24.999 7a4 4 0 0 1 4 4c0 .586-.133 1.139-.359 1.64A3.993 3.993 0 0 0 30.999 9a4 4 0 0 0-4-4z" />
+                                <path fill="#02042a" d="M8 28s0-4 1-5s13.001-10.999 14-10s-9.001 13-10.001 14S8 28 8 28z" />
+                            </g>
+                        </svg>
+    
+                        <div class="z-10">
+                            <h3 class="font-bold text-[1.2rem] leading-[1.2] max-w-[500px] text-white mt-4">Instant Activation</h3>
+                            <p class="text-white opacity-80 mt-4">
+                                Get activated and transact within 2 minutes. Completely online boarding with minimum documentation.
+                            </p>    
+                        </div>     
+                    </div>
+    
+                    <!-- box2 -->
+                    <div class="z-10 group w-full h-full min-h-[15rem] relative cursor-pointer overflow-hidden flex flex-col justify-start items-start px-4 pt-10 pb-4">            
+                        <svg class="w-10 h-10" width="256px" height="256px" viewBox="0 0 91.00 91.00" enable-background="new 0 0 91 91" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#000000" stroke-width="0.00091">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="0" y="0" width="91.00" height="91.00" rx="45.5" fill="#4b94ed" />
+                            </g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                <g>
+                                    <path d="M51.895,63.339c0-1.01-0.098-1.996-0.244-2.961l7.139-4.129l-7.402-12.813l-7.131,4.119
+                                    c-1.539-1.232-3.271-2.229-5.135-2.969v-8.234H24.324v8.234c-1.789,0.709-3.455,1.668-4.955,2.828l-7.088-4.203L4.744,55.948
+                                    l7.084,4.197c-0.164,1.041-0.273,2.105-0.273,3.193c0,1.008,0.094,1.996,0.24,2.965l-7.137,4.123l7.398,12.813l7.133-4.117
+                                    c1.539,1.229,3.275,2.229,5.135,2.969v8.232h14.797v-8.232c1.791-0.707,3.455-1.662,4.955-2.832l7.084,4.203l7.549-12.734
+                                    l-7.092-4.199C51.783,65.489,51.895,64.425,51.895,63.339z M31.72,73.188c-5.43,0-9.85-4.418-9.85-9.85
+                                    c0-5.434,4.42-9.854,9.85-9.854c5.434,0,9.854,4.42,9.854,9.854C41.574,68.771,37.154,73.188,31.72,73.188z"
+                                    fill="#02042a" />
+                                    
+                                    <path d="M81.404,21.101c0-0.77-0.076-1.516-0.188-2.252l5.426-3.127l-5.621-9.74l-5.42,3.125
+                                    c-1.172-0.928-2.482-1.691-3.898-2.25V0.603h-11.25v6.254c-1.359,0.537-2.623,1.262-3.754,2.148l-5.389-3.191l-5.727,9.67
+                                    l5.385,3.188c-0.127,0.797-0.213,1.604-0.213,2.43c0,0.766,0.076,1.514,0.186,2.25l-5.424,3.131l5.624,9.742l5.416-3.131
+                                    c1.176,0.932,2.488,1.689,3.896,2.25v6.254h11.25v-6.254c1.359-0.541,2.625-1.264,3.754-2.148l5.393,3.189l5.73-9.671
+                                    l-5.389-3.186C81.322,22.732,81.404,21.929,81.404,21.101z M66.08,29.701c-4.74,0-8.598-3.861-8.598-8.6
+                                    c0-4.744,3.857-8.598,8.598-8.598c4.742,0,8.602,3.854,8.602,8.598C74.682,25.839,70.822,29.701,66.08,29.701z"
+                                    fill="#ffffff" />
+                                </g>
+                                </g>
+                            </g>
+                        </svg>
+    
+    
+                        <div class="z-10">
+                            <h3 class="font-bold text-[1.2rem] leading-[1.2] max-w-[500px] text-white mt-4">Easy Integration</h3>
+                            <p class="text-white opacity-80 mt-4">
+                                With plugins for all major
+                                platforms and languages,
+                                integrate and go live with
+                                Razorpay in less than an hour.
+                            </p>    
+                        </div>     
+                    </div>
+    
+                    <!-- box3 -->
+                    <div class="z-10 group w-full h-full min-h-[15rem] relative cursor-pointer overflow-hidden flex flex-col justify-start items-start px-4 pt-10 pb-4">            
+                        <svg class="w-10 h-10" fill="#ffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="0" width="512" height="512" rx="256" fill="#2b84ea"></rect>
+                            <g>
+                            <path fill="#02042a" d="M366.748,485.999c-1.433-3.167-2.637-6.446-3.58-9.876l-0.074-0.227 c-1.586-5.881-2.396-12.139-2.281-18.585c0.303-18.356,8.048-34.905,20.299-46.741c12.214-11.799,28.989-18.961,47.344-18.66 c8.163,0.151,15.947,1.734,23.11,4.524c4.372,1.696,8.5,3.882,12.363,6.445v-57.599c-2.151-0.678-4.299-1.319-6.485-1.885 c-3.147-0.829-6.408-1.545-9.725-2.111c-1.94-0.338-3.523-1.922-3.787-3.957l-5.675-42.785l-16.267-0.264l-7.142,42.559 c-0.319,1.96-1.885,3.543-3.941,3.807c-4.183,0.604-8.311,1.396-12.381,2.413c-4.11,1.018-8.181,2.261-12.14,3.731 c-1.846,0.641-3.994,0.075-5.24-1.545l-26.311-34.229l-14.209,7.917l14.964,40.107c0.923,1.923,0.414,4.26-1.319,5.616 c-3.395,2.639-6.577,5.429-9.557,8.293c-2.997,2.903-5.899,5.994-8.63,9.273c-1.263,1.508-3.394,2.074-5.296,1.319l-39.941-16.511 l-8.367,13.947l33.039,27.216c1.716,1.208,2.453,3.507,1.621,5.542c-1.582,3.883-2.977,7.916-4.127,11.986 c-1.147,4.034-2.092,8.144-2.808,12.327c-0.341,1.923-1.923,3.506-3.977,3.77l-42.767,5.692l-0.302,16.284l42.598,7.124 c1.941,0.34,3.542,1.885,3.806,3.959c0.34,2.487,0.754,4.938,1.245,7.312c0.263,1.244,0.526,2.488,0.846,3.809H366.748z" />
+                            </g>
+                            <text x="10" y="250" font-size="200" font-weight="bold" fill="#ffffff">API</text>
+                        </svg>
+    
+                        <div class="z-10">
+                            <h3 class="font-bold text-[1.2rem] leading-[1.2] max-w-[500px] text-white mt-4">API Driven</h3>
+                            <p class="text-white opacity-80 mt-4">
+                                Build your business for scale
+                                with our complete API-driven
+                                automation that requires zero
+                                manual intervention.
+                            </p>    
+                        </div>     
+                    </div>
+    
+                    <!-- box4 -->
+                    <div class="z-10 group w-full h-full min-h-[15rem] relative cursor-pointer overflow-hidden flex flex-col justify-start items-start px-4 pt-10 pb-4">            
+                        <svg class="w-10 h-10" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#02042a">
+                            <!-- Background: White -->
+                            <rect x="0" y="0" width="512" height="512" rx="256" fill="#FFFFFF" />
+                            
+                            <g>
+                                <!-- Card: Light Blue -->
+                                <path fill="#4b94ed"
+                                    d="M0.2,137.376v282.816c0.044,15.976,12.984,28.916,28.96,28.96H483.04c15.976-0.044,28.916-12.984,28.96-28.96V91.808
+                                    c-0.044-15.976-12.984-28.916-28.96-28.96H74.512" />
+                                <path fill="#4b94ed"
+                                    d="M59.592,137.328H0l74.488-74.464v59.592C74.448,130.663,67.798,137.301,59.592,137.328z" />
+                                
+                                <!-- Inner Bank Image: Navy Blue -->
+                                <g fill="#000080">
+                                    <rect x="147.058" y="230.773" width="26.216" height="103.067" />
+                                    <path
+                                        d="M254.096,123.912L128.96,207.808H379.2L254.096,123.912z M254.096,185.84c-7.63,0-13.816-6.186-13.816-13.816
+                                        s6.186-13.816,13.816-13.816c7.63,0,13.816,6.186,13.816,13.816C267.912,179.655,261.726,185.84,254.096,185.84z" />
+                                    <rect x="119.571" y="358.061" width="269.049" height="26.216" />
+                                    <path
+                                        d="M250.288,325.232v-10.744c-5.759-0.019-11.399-1.643-16.288-4.688l2.552-7.136c4.564,2.965,9.885,4.554,15.328,4.576
+                                        c7.56,0,12.672-4.36,12.672-10.4c0-5.856-4.152-9.472-12-12.672c-10.856-4.256-17.56-9.152-17.56-18.4
+                                        c0.141-9.005,7.103-16.427,16.08-17.144v-10.8h6.528v10.328c4.859,0.037,9.627,1.321,13.848,3.728l-2.648,7.048
+                                        c-4.052-2.413-8.691-3.664-13.408-3.616c-8.208,0-11.288,4.896-11.288,9.152c0,5.536,3.944,8.304,13.208,12.136
+                                        c10.968,4.48,16.504,10.008,16.504,19.488c-0.171,9.433-7.406,17.229-16.8,18.104v11.072h-6.704L250.288,325.232z" />
+                                    <rect x="187.686" y="230.773" width="26.216" height="103.067" />
+                                    <rect x="294.281" y="230.773" width="26.216" height="103.067" />
+                                    <rect x="334.909" y="230.773" width="26.216" height="103.067" />
+                                </g>
+                            </g>
+                        </svg>
+    
+    
+    
+                        <div class="z-10">
+                            <h3 class="font-bold text-[1.2rem] leading-[1.2] max-w-[500px] text-white mt-4">100+ Payment Modes</h3>
+                            <p class="text-white opacity-80 mt-4">
+                                Offer your customers the luxury
+                                of all payment modes including
+                                Credit/Debit cards, Netbanking,
+                                LJPI, Wallets etc.
+                            </p>    
+                        </div>     
+                    </div>
+    
+                    <!-- box5 -->
+                    <div class="z-10 group w-full h-full min-h-[15rem] relative cursor-pointer overflow-hidden flex flex-col justify-start items-start px-4 pt-10 pb-4">            
+                        <svg class="w-10 h-10" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64.00 64.00" enable-background="new 0 0 64 64" xml:space="preserve" fill="#02042a" stroke="#02042a"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="0" y="0" width="64.00" height="64.00" rx="32" fill="#2b84ea" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="#ffffff" d="M39.294,31.296l-7.976,7.976c-0.391,0.391-0.441,1.074-0.051,1.465c0.389,0.391,1.09,0.324,1.48-0.066 l7.96-7.96c0.391-0.391,0.391-1.025,0-1.414C40.317,30.905,39.685,30.905,39.294,31.296z"></path> <path fill="#ffffff" d="M47.293,39.295l-7.976,7.976c-0.391,0.391-0.441,1.074-0.051,1.465c0.389,0.391,1.09,0.324,1.48-0.066 l7.96-7.96c0.391-0.391,0.391-1.025,0-1.414C48.316,38.904,47.684,38.904,47.293,39.295z"></path> <path fill="#ffffff" d="M31.29,23.292l-7.976,7.976c-0.391,0.391-0.441,1.074-0.051,1.465c0.389,0.391,1.09,0.324,1.48-0.066 l7.96-7.96c0.391-0.391,0.391-1.025,0-1.414C32.313,22.901,31.681,22.901,31.29,23.292z"></path> <path fill="#ffffff" d="M62.828,37.172L46.702,21.046l-1.767-1.767C44.974,18.857,45,18.433,45,18.001c0-7.731-6.268-14-14-14 c-0.432,0-1.312,0.069-1.328,0.071c0.001,0-0.006-0.006-0.005-0.005c-4.067,0.384-7.616,2.515-9.916,5.626 c-0.005,0.006-0.009,0.012-0.014,0.019c-0.425,0.577-0.808,1.187-1.142,1.826c-0.033,0.062-0.069,0.124-0.102,0.187 c-0.027,0.054-0.051,0.109-0.077,0.164c-0.116,0.234-0.232,0.469-0.334,0.711c-0.688,1.641-1.069,3.439-1.079,5.328 C17.004,17.951,17,17.976,17,18l0,0v0.001v0.009c0.001,0.614,0.047,1.217,0.124,1.811c0.002-0.001,0.005-0.002,0.007-0.002 c0.2-0.06,0.393-0.136,0.578-0.225c0.063-0.029,0.121-0.068,0.184-0.102c0.111-0.061,0.223-0.12,0.328-0.191 c0.093-0.062,0.179-0.133,0.266-0.202c0.061-0.048,0.123-0.095,0.181-0.147c0.11-0.098,0.211-0.204,0.31-0.313 c0.017-0.019,0.036-0.034,0.053-0.054v-0.005C19.629,17.885,20,16.991,20,16c0-0.619-0.152-1.199-0.404-1.723 c0.249-0.762,0.572-1.488,0.961-2.174C21.455,13.152,22,14.512,22,16c0,3.313-2.687,6-6,6s-6-2.687-6-6 c0-2.916,2.081-5.344,4.838-5.885c-0.4,0.818-0.758,1.662-1.032,2.545C12.72,13.375,12,14.603,12,16 c0,1.018,0.402,1.924,1.031,2.627c0.001,0.012,0.002,0.022,0.002,0.033c0.249,0.277,0.537,0.515,0.853,0.715 c0.017,0.011,0.032,0.024,0.05,0.035l0,0c0.33,0.202,0.692,0.354,1.077,0.452c0.005,0.001,0.01,0.003,0.015,0.005 c0.003,0.001,0.008,0.002,0.011,0.004c0.028,0.006,0.055,0.02,0.084,0.025l0,0h0.001c0,0-0.067-0.687-0.103-1.305 C15.012,18.396,15,18.201,15,18.002V18c0-0.059,0.008-0.115,0.009-0.174c0.022-2.054,0.436-4.01,1.162-5.809 c0.207-0.514,0.446-1.01,0.704-1.495c0.059-0.11,0.113-0.224,0.175-0.333c0.052-0.093,0.11-0.182,0.164-0.273 c0.171-0.291,0.35-0.574,0.537-0.853c0.066-0.099,0.133-0.196,0.2-0.293c0.246-0.347,0.502-0.688,0.773-1.013 c0.007-0.008,0.014-0.016,0.021-0.023c0.28-0.334,0.576-0.654,0.883-0.964c0.043-0.044,0.087-0.087,0.13-0.13 c1.673-1.654,3.707-2.942,5.977-3.734c0.72-0.252,1.458-0.461,2.221-0.607c0.986-0.19,2.003-0.298,3.045-0.298 c8.837,0,16,7.163,16,16c0,1.042-0.107,2.059-0.298,3.045l1.656,1.655C48.764,21.201,49,19.629,49,18c0-9.94-8.059-18-18-18 c-1.663,0-3.266,0.244-4.793,0.666C25.557,0.236,24.791,0,24,0H4C1.791,0,0,1.791,0,4v20c0,1.061,0.422,2.078,1.172,2.828l36,36 C37.952,63.609,38.977,64,40,64s2.048-0.391,2.828-1.172l20-20C64.391,41.267,64.391,38.733,62.828,37.172z M42.965,17.309 L31.692,6.036C37.765,6.383,42.617,11.235,42.965,17.309z M21.85,34.146c-1.17-1.17-1.127-3.117,0.042-4.286l7.984-7.984 c1.17-1.17,3.073-1.169,4.243,0.001c1.169,1.169,1.169,3.073-0.001,4.243h0.002l-7.992,7.99 C24.958,35.28,23.018,35.316,21.85,34.146z M29.854,42.15c-1.17-1.17-1.127-3.117,0.042-4.286l7.984-7.984 c1.17-1.17,3.073-1.169,4.243,0.001c1.169,1.169,1.169,3.073-0.001,4.243h0.002l-7.992,7.99 C32.962,43.284,31.021,43.32,29.854,42.15z M50.123,42.123l-7.992,7.99c-1.17,1.17-3.11,1.206-4.278,0.036 c-1.17-1.17-1.127-3.117,0.042-4.286l7.984-7.984c1.17-1.17,3.073-1.169,4.243,0.001c1.169,1.169,1.169,3.073-0.001,4.243H50.123z"></path> </g> </g></svg>
+
+                        <div class="z-10">
+                            <h3 class="font-bold text-[1.2rem] leading-[1.2] max-w-[500px] text-white mt-4">Simple Pricing</h3>
+                            <p class="text-white opacity-80 mt-4">
+                                Our innovative payment
+                                solutions with competitive
+                                pricing make payments simpler.
+                            </p>    
+                        </div>     
+                    </div>
+    
+                    <!-- box6 -->
+                    <div class="z-10 group w-full h-full min-h-[15rem] relative cursor-pointer overflow-hidden flex flex-col justify-start items-start px-4 pt-10 pb-4">            
+                        <svg class="w-10 h-10" fill="#000000" height="256px" width="256px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 476.58 476.58" xml:space="preserve" stroke="#000000" stroke-width="0.00476583">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <!-- Light blue background -->
+                                <rect x="0" y="0" width="476.58" height="476.58" rx="238.29" fill="#4b94ed" strokewidth="0"></rect>
+                            </g>
+                            
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            
+                            <g id="SVGRepo_iconCarrier">
+                                <!-- Add white to the first icon part -->
+                                <path d="M476.583,262.835c0-32.208-25.811-58.375-57.815-59.259c-2.33-3.642-5.623-6.553-9.505-8.495 c5.14-76.723-61.653-157.01-144.843-167.175c-10.731-1.864-15.576-1.568-26.105-2.29C115.523,29.172,62.645,132.404,67.288,195.135 c-3.851,1.942-7.097,4.829-9.411,8.433C25.841,204.421,0,230.604,0,262.835c0,32.224,25.841,58.407,57.878,59.261 c4.239,6.631,11.632,11.057,20.079,11.057c13.169,0,23.853-10.677,23.853-23.853v-92.935c0-8.045-4.006-15.126-10.109-19.444 c10.295-57.87,62.893-122.232,146.613-123.598c5.063,0.364,15.964,0.278,20.562,1.498c41.649,3.844,111.531,44.663,125.99,122.162 c-6.056,4.325-10.031,11.376-10.031,19.382v92.935c0,10.017,6.18,18.55,14.922,22.091v10.117c0,26.415-17.842,49.594-43.373,56.364 l-72.042,19.078c-3.882-5.148-9.767-8.687-16.74-8.687c-11.787,0-21.353,9.565-21.353,21.352c0,11.803,9.567,21.353,21.353,21.353 c10.855,0,19.428-8.183,20.81-18.644l72.042-19.078c32.502-8.619,55.206-34.948,55.206-81.249 c5.467-1.678,10.095-5.187,13.108-9.909C450.772,321.202,476.583,295.035,476.583,262.835z" fill="#FFFFFF"/>
+                                
+                                <!-- Add navy blue for the next parts -->
+                                <path d="M184.443,293.405h-23.201v-0.256c13.402-11.135,29.63-24.537,29.63-41.953c0-37.783-60.207-27.783-53.888-11.88 c1.724,4.635,6.305,5.933,9.831,4.217c11.213-5.475,24.739-3.161,24.739,9.317c-0.374,13.767-20.546,29.173-36.448,43.561 c-2.392,2.166-3.013,12.889,2.702,12.889h46.635C194.956,309.299,194.956,293.405,184.443,293.405z" fill="#000080"/>
+                                
+                                <path d="M247.741,309.299c10.343,0,9.147-9.497,9.147-19.706c13.914,0,13.572-14.498,0-14.498v-44.421 c0-2.222-1.802-4.023-4.023-4.023c-25.653,0-14.861-7.663-49.166,47.544c-2.794,4.542-3.354,15.398,2.283,15.398h32.596 C238.578,299.78,237.383,309.299,247.741,309.299z M220.021,275.095v-0.256l11.057-18.052c2.796-5.211,4.969-10.041,7.625-15.382 h0.512c-0.854,12.175-0.636,15.264-0.636,33.69H220.021z" fill="#000080"/>
+                                
+                                <path d="M278.038,233.33v66.241c0,12.842,19.46,12.897,19.46,0v-26.129h31.913v26.191c0,12.75,19.334,12.796,19.334,0v-66.364 c0-5.343-4.332-9.667-9.659-9.667c-13.278,0-9.675,19.31-9.675,32.93h-31.913V233.33 C297.497,220.432,278.038,220.487,278.038,233.33z" fill="#000080"/>
+                            </g>
+                        </svg>
+    
+                        <div class="z-10">
+                            <h3 class="font-bold text-[1.2rem] leading-[1.2] max-w-[500px] text-white mt-4">Best in Industry Support</h3>
+                            <p class="text-white opacity-80 mt-4">
+                                Always available email, phone
+                                and chat based support to help
+                                you in your every step.
+                            </p>    
+                        </div>     
+                    </div>
+    
+                    <!-- box7 -->
+                    <div class="z-10 group w-full h-full min-h-[15rem] relative cursor-pointer overflow-hidden flex flex-col justify-start items-start px-4 pt-10 pb-4">            
+                        <svg class="w-10 h-10" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background Circle -->
+                            <rect x="0" y="0" width="25" height="25" rx="12.5" fill="#2b84ea" />
+    
+                            <!-- White Boxes with Navy Blue Outline -->
+                            <!-- Box 1 -->
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.918 10.0005H7.082C6.66587 9.99708 6.26541 10.1591 5.96873 10.4509C5.67204 10.7427 5.50343 11.1404 5.5 11.5565V17.4455C5.5077 18.3117 6.21584 19.0078 7.082 19.0005H9.918C10.3341 19.004 10.7346 18.842 11.0313 18.5502C11.328 18.2584 11.4966 17.8607 11.5 17.4445V11.5565C11.4966 11.1404 11.328 10.7427 11.0313 10.4509C10.7346 10.1591 10.3341 9.99708 9.918 10.0005Z" fill="#ffffff" stroke="#02042a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+                            <!-- Box 2 -->
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.918 4.0006H7.082C6.23326 3.97706 5.52559 4.64492 5.5 5.4936V6.5076C5.52559 7.35629 6.23326 8.02415 7.082 8.0006H9.918C10.7667 8.02415 11.4744 7.35629 11.5 6.5076V5.4936C11.4744 4.64492 10.7667 3.97706 9.918 4.0006Z" fill="#ffffff" stroke="#02042a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+                            <!-- Box 3 -->
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.082 13.0007H17.917C18.3333 13.0044 18.734 12.8425 19.0309 12.5507C19.3278 12.2588 19.4966 11.861 19.5 11.4447V5.55666C19.4966 5.14054 19.328 4.74282 19.0313 4.45101C18.7346 4.1592 18.3341 3.9972 17.918 4.00066H15.082C14.6659 3.9972 14.2654 4.1592 13.9687 4.45101C13.672 4.74282 13.5034 5.14054 13.5 5.55666V11.4447C13.5034 11.8608 13.672 12.2585 13.9687 12.5503C14.2654 12.8421 14.6659 13.0041 15.082 13.0007Z" fill="#ffffff" stroke="#02042a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+                            <!-- Box 4 -->
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.082 19.0006H17.917C18.7661 19.0247 19.4744 18.3567 19.5 17.5076V16.4936C19.4744 15.6449 18.7667 14.9771 17.918 15.0006H15.082C14.2333 14.9771 13.5256 15.6449 13.5 16.4936V17.5066C13.525 18.3557 14.2329 19.0241 15.082 19.0006Z" fill="#ffffff" stroke="#02042a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+    
+    
+                        <div class="z-10">
+                            <h3 class="font-bold text-[1.2rem] leading-[1.2] max-w-[500px] text-white mt-4">Dashboard Reporting</h3>
+                            <p class="text-white opacity-80 mt-4">
+                                Real-time data and insights on
+                                your Razorpay Dashboard to
+                                make informed busines
+                                decisions.
+                            </p>    
+                        </div>     
+                    </div>
+    
+                    <!-- box8 -->
+                    <div class="z-10 group w-full h-full min-h-[15rem] relative cursor-pointer overflow-hidden flex flex-col justify-start items-start px-4 pt-10 pb-4">            
+                        <svg class="w-10 h-10" height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.00 512.00" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0">
+                            <rect x="0" y="0" width="512.00" height="512.00" rx="256" fill="#2b84ea" strokewidth="0"></rect>
+                        </g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <style type="text/css">
+                            .st0 { fill: #ffffff; stroke: #02042a; stroke-width: 5; }
+                            </style>
+                            <g>
+                            <path class="st0" d="M493.118,60.602c-40.138,17.719-93.777,20.322-143.881-0.447C324.872,50.055,273.523,25.223,255.999,0 
+                                c-17.521,25.223-68.871,50.055-93.236,60.154C112.657,80.924,59.021,78.32,18.88,60.602c-7.203-3.182-15.096,2.08-15.096,9.955 
+                                C3.784,493.475,255.999,512,255.999,512s252.217-18.525,252.217-441.443C508.216,62.682,500.323,57.42,493.118,60.602z 
+                                M89.155,125.33c32.033,0,63.305-6.23,92.947-18.518c16.129-6.686,46.719-20.51,73.896-39.258 
+                                c27.178,18.748,57.77,32.572,73.898,39.258c29.647,12.289,60.918,18.52,92.949,18.518c11.256,0,22.45-0.801,33.428-2.367 
+                                C439.72,416.264,284.815,456.182,255.999,461.07c-28.814-4.889-183.72-44.807-200.273-338.108 
+                                C66.704,124.531,77.899,125.33,89.155,125.33z"/>
+                            <path class="st0" d="M255.999,409.279c29.94-8.686,119.684-49.879,144.676-234.27c-30.955-2.328-61.182-9.543-90.117-21.539 
+                                c-12.354-5.121-32.789-14.211-54.559-26.502c-21.768,12.291-42.201,21.381-54.556,26.502 
+                                c-28.932,11.994-59.156,19.209-90.117,21.539C136.317,359.4,226.06,400.594,255.999,409.279z"/>
+                            </g>
+                        </g>
+                        </svg>
+    
+                        <div class="z-10">
+                            <h3 class="font-bold text-[1.2rem] leading-[1.2] max-w-[500px] text-white mt-4">secure</h3>
+                            <p class="text-white opacity-80 mt-4">
+                                PCl DSS Level I compliant
+                                solution which removes your
+                                burden of regulatory compliance.
+                            </p>    
+                        </div>     
+                    </div>
+    
+                    <!-- shape -->
+                    <div class="absolute bottom-[-6rem] left-0 w-full h-[112px] z-20 bg-[#f1f5fd]">
+                        <svg viewBox="0 0 100 100" width="100%" height="160" preserveAspectRatio="none">
+                            <polygon points="-15,-1 105,0 92.2,100" fill="#1659b5"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    
+        <!-- feature section 5 -->
+        <section class="relative font-mullish w-full bg-[#f4f8ff]">
+            <div class="w-11/12 max-w-[1080px] flex mx-auto items-center [@media(max-width:800px)]:flex-col">
+                <!-- left -->
+                <div class="flex flex-col w-[54%] justify-between py-40 mt-7 [@media(max-width:800px)]:w-[80%] [@media(max-width:800px)]:pb-5">
+                    <div>
+                        <h3 class="font-bold text-2xl leading-[1.2]">Join the 50,00,000+ businesses using Razorpay</h3>
+                        <div class="w-6 h-1 bg-greenLight mt-4 mb-6"></div>
+                    </div>
+    
+                    <div class="my-5">
+                        <p class="font-medium">We make it easier for you to focus on building great products while we work
+                        on simplifying your payments. Become one of us by joining thousands of our
+                        happy users and simplify the online payment experience for your customers.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="font-medium">Focus on your business while we handle the complexities of payments for you.</p>
+                    </div>
+                </div>
+    
+                <!-- right -->
+                <div class="w-[46%] relative overflow-y-hidden h-[500px] [@media(max-width:800px)]:w-[80%]">
+                    <!-- top-gradient -->
+                    <div style = "background: linear-gradient(180deg, #f4f8ff, #fff0)" class="z-10 absolute -top-5 w-full h-[200px] ">
+                    </div>
+    
+                    <div class="scrollWrapper w-full">
+                        <img src="./images/company-icons.png" alt="logos" class="w-[100%] h-auto block">
+                        <img src="./images/company-icons.png" alt="logos" class="w-[100%] h-auto block">
+                    </div>
+    
+                    <!-- bottom-gradient -->
+                    <div style = "background: linear-gradient(180deg, #fff0, #f4f8ff)" class="z-10 absolute bottom-[-1rem] w-full h-[200px] ">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- testimonial section -->
+        <section class="font-mullish w-full mt-16">
+            <div class="w-11/12 max-w-[1080px] mx-auto">
+                <!-- heading -->
+                <div class="flex flex-col">
+                    <h3 class="font-bold text-2xl leading-[1.2] mx-auto inline-block w-[20rem] text-center">An Experience</h3>
+                    <h3 class="font-bold text-2xl leading-[1.2] mx-auto inline-block w-[20rem] text-center">People Love to Talk About</h3>
+                    <div class="w-6 h-1 bg-greenLight mt-4 mb-6 mx-auto"></div>
+                </div>
+    
+                <div class="flex">
+                    <!-- icon-left -->
+                    <div class="flex justify-center items-center mr-16 [@media(max-width:500px)]:hidden">
+                        <div class="w-20 h-20 rounded-full bg-[#f4f5ff] flex items-center justify-center opacity-70">
+                            <div class="w-12 h-12 rounded-full bg-[#e5e8fe] flex justify-center items-center">
+                                <i data-feather="chevron-left" class="w-10 h-10"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- content -->
+                    <div class="flex [@media(max-width:925px)]:flex-col">
+                        <!-- left -->
+                        <div class="pt-12 relative">
+                            <div class="z-10 relative flex">
+                                <img src="./images/testimonial-profile.webp" alt="" class="w-auto h-80 rounded-lg z-20 mx-auto [@media(max-width:800px)]:h-[12rem]">
+                            </div>
+                            <div class="z-0">
+                                <img src="./images/right-dot.png" alt="" class="absolute -top-20 -left-40 rotate-180 [@media(max-width:830px)]:hidden">
+                            </div>
+                        </div>
+        
+                        <!-- right -->
+                        <div class="flex flex-col w-[60%] pl-40 pt-20 [@media(max-width:925px)]:w-[100%] [@media(max-width:925px)]:pt-5 [@media(max-width:925px)]:pl-10">
+                            <div>
+                                <svg class="w-10 h-10" fill="#E8E7EA" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 198 198" xml:space="preserve" transform="matrix(-1, 0, 0, 1, 0, 0)" stroke="#E8E7EA"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M0,92.905h48.024c-0.821,35-10.748,38.973-23.216,40.107L20,133.608v38.486l5.542-0.297 c16.281-0.916,34.281-3.851,46.29-18.676C82.359,140.125,87,118.893,87,86.3V25.905H0V92.905z"></path> <path d="M111,25.905v67h47.383c-0.821,35-10.427,38.973-22.895,40.107L131,133.608v38.486l5.222-0.297 c16.281-0.916,34.442-3.851,46.451-18.676C193.199,140.125,198,118.893,198,86.3V25.905H111z"></path> </g> </g></svg>
+                            </div>
+                            <div class="text-2xl">
+                                <p>Readymade Closed Wallet Solution For Quick Refunds</p>
+                            </div>
+                            <div>
+                                <a href="#" class="text-[#bbbebf] italic font-semibold">Learn More</a>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Mark Zuckerberk</h3>
+                            </div>
+                            <div>
+                                <p class="font-medium">CEO, META</p>
+                            </div>
+                            <div>
+                                <img src="./images/logo-meta.png" alt="" class="w-10 h-10 rounded-full">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- icon-right -->
+                    <div class="flex justify-center items-center ml-16 [@media(max-width:500px)]:hidden">
+                        <div class="w-20 h-20 rounded-full bg-[#f4f5ff] flex items-center justify-center opacity-70">
+                            <div class="w-12 h-12 rounded-full bg-[#e5e8fe] flex justify-center items-center">
+                                <i data-feather="chevron-right" class="w-10 h-10"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex justify-between w-20 mx-auto mt-[4rem] [@media(max-width:925px)]:mt-[1.8rem]">
+                    <div class="w-2 h-2 rounded-full bg-[#a0a3a5]"></div>
+                    <div class="w-2 h-2 rounded-full bg-[#2b6db7]"></div>
+                    <div class="w-2 h-2 rounded-full bg-[#a0a3a5]"></div>
+                    <div class="w-2 h-2 rounded-full bg-[#a0a3a5]"></div>
+                    <div class="w-2 h-2 rounded-full bg-[#a0a3a5]"></div>
+                    <div class="w-2 h-2 rounded-full bg-[#a0a3a5]"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- frature section 6 -->
+        <section class="h-[30rem] flex items-center relative font-mullish w-full mt-[4rem] text-white z-10" style="background: linear-gradient(to right, #1151b4, #3a89d2, #5bb8eb);">
+            <!-- shape -->
+            <div class="absolute w-full top-[-5rem] z-0 [@media(max-width:830px)]:hidden">
+              <svg width="100%" height="300" viewBox="00 0 90 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- White triangle (bottom) -->
+                <polygon points="100,100 -5,25 120,20" fill="white"/>
+    
+                <!-- Light blue triangle (on top) -->
+                <polygon points="60,71 90,30 105,102" fill="#f1f5fd"/>
+                </svg>  
+            </div>
+    
+            <!-- content -->
+            <div class="relative z-10 w-11/12 max-w-[1080px] mx-auto mt-[5rem] [@media(max-width:830px)]:mt-0">
+                <div>
+                    <h3 class="text-2xl font-bold">Supercharge your business with Razorpay</h3>
+        
+                    <div class="w-6 h-1 bg-greenLight mt-4 mb-6"></div>
+        
+                    <p class="inline-block w-[42%] font-semibold [@media(max-width:830px)]:w-[85%]">Sign up now to experience the future of payments and offer
+                    your customers the best checkout experience.</p>
+                </div>
+    
+                <div class="grid grid-cols-3 font-semibold my-6 w-[80%] gap-y-4 [@media(max-width:830px)]:grid-cols-2">
+                    <div class="flex">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>Quick Onboarding</span>
+                    </div>
+                    <div class="flex">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>
+                            Access to entire suite 
+                        </span>
+                    </div>
+                    <div class="flex">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>
+                            API access
+                        </span>
+                    </div>
+                    <div class="flex">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>24x7 support</span>
+                    </div>
+                </div>
+    
+                <button class="rounded-sm bg-white text-lightBlue300 border border-white flex py-3 px-4 justify-between gap-1 group [@media(max-width:830px)]:py-1 [@media(max-width:830px)]:px-2">
+                    <p class="font-bold font-mullish group-hover:text-lightBlue500 transition-all duration-200 [@media(max-width:830px)]:text-sm">Sign Up</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 24 24">
+                        <path class="group-hover:stroke-lightBlue500" d="M6 12h10M14 8l4 4-4 4" stroke="#4b94ed" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                </button>
+                
+            </div>
+
+            <div>
+                <img src="./images/icon-laptop.png" alt="" class="absolute z-30 right-[0rem] top-[7rem] w-80 h-[17rem] [@media(max-width:830px)]:hidden">
+            </div>
+
+            <!-- shape -->
+            <div class="absolute w-full bottom-[-5rem] z-0">
+                <svg class="[@media(max-width:830px)]:hidden" width="100%" height="300" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Light blue triangle (on top) -->
+                <polygon points="-5,75 95,25 105,75" fill="#eaf7fd"/>
+                </svg>  
+
+                <svg class="hidden [@media(max-width:830px)]:block" width="100%" height="300" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Light blue triangle (on top) -->
+                <polygon points="-5,75 110,35 105,75" fill="#eaf7fd"/>
+                </svg> 
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section class="relative bg-[#eaf7fd] w-full pt-40 pb-4">
+            <div class="relative w-11/12 max-w-[1080px] font-mullish flex mx-auto transition-all duration-200 justify-between [@media(max-width:925px)]:flex-col">
+                <div class="pb-12">
+                    <!-- first -->
+                    <div class="flex flex-col w-[18.5rem]">
+                        <img src="./images/logo-razorpay-dark.png" alt="" class="w-[8rem] h-auto mb-4">
+    
+                        <p class="pb-6 text-grayText font-medium">
+                            Razorpay is the only payments solution
+                            in India that allows businesses to
+                            accept, process and disburse payments
+                            with its product suite. It gives you
+                            access to all payment modes including
+                            credit card. debit card, netbanking, UPI
+                            and popular wallets including JioMoney.
+                            Mobikwik. Airtel Money. FreeCharge.
+                            Ola Money and PayZapp.
+                        </p>
+    
+                        <p class="pb-6 text-grayText font-medium">
+                            RazorpayX supercharges your business
+                            banking experience. bringing
+                            effectiveness, efficiency, and excellence
+                            to all financial processes. With
+                            RazorpayX. businesses can get access
+                            to fully-functional current accounts.
+                            supercharge their payouts and
+                            automate payroll compliance.
+                        </p>
+    
+                        <p class="pb-6 text-grayText font-medium">
+                            Manage your marketplace. automate
+                            bank transfers, collect recurring
+                            payments, share invoices with
+                            customers and avail working capital
+                            loans - all from a single platform. Fast
+                            forward your business with Razorpay.
+                        </p>
+    
+                        <p class="pb-6 text-xs text-grayText font-medium">
+                            Disclaimer: The RazorpayX powered Current Account
+                            and VISA corporate credit card are provided by RBI
+                            licensed banks. Your RazorpayX powered account is
+                            provided by our partner bank, in accordance with REI
+                            regulations. RazorpayX itself is not a bank and doesn't
+                            hold or claim to hold o banking license.
+                        </p>
+    
+                        <h3 class="font-bold text-xl pb-6">
+                            SUBSCRIBE TO OUR
+                            NEWSLETTER
+                        </h3>
+    
+                        <div class="flex bg-white py-2 rounded-sm border-2 border-lightGray mb-4">
+                            <p class="text-sm text-center pl-2 text-grayText">Your email address</p>
+                            <button class="text-sm group flex pl-8">
+                                <p class="font-bold font-mullish group-hover:text-lightBlue500 transition-all duration-200 text-lightBlue300">Subscribe</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 24 24">
+                                    <path class="group-hover:stroke-lightBlue500" d="M6 12h10M14 8l4 4-4 4" stroke="#4b94ed" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                            </button>
+                        </div>
+    
+                        <img src="./images/about-first.png" alt="">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 pl-[5rem] [@media(max-width:925px)]:pl-0 [@media(min-width:550px)]:grid-cols-3">
+                    <!-- second -->
+                    <div class="flex flex-col">
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">BANKING PLUS</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">RazorpayX</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Current Accounts</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Payouts</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Payout Links</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Corporate Credit Card</p>
+                        <div class="flex pb-2">
+                            <p class="text-lightBlue font-bold cursor-pointer hover:text-deepBlue">View Live Demp</p>
+                            <p class="text-white font-bold inline-block rounded-sm bg-[#1bbd51] h-[1.5rem] p-[0.15rem] ml-1 text-sm">NEW</p>
+                        </div>
+    
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">LENDING</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Razorpay Capital</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Instant Settlements</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Working Capital Loans</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Payout Links</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Marketplace Instant Settlements</p>
+    
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">RISK AND FRAUD</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Thirdwatch</p>
+                        <div class="flex pb-2">
+                            <p class="text-lightBlue font-bold cursor-pointer hover:text-deepBlue">PrePay CoD</p>
+                            <p class="text-white font-bold inline-block rounded-sm bg-[#1bbd51] h-[1.5rem] p-[0.15rem] ml-1 text-sm">NEW</p>
+                        </div>
+    
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">BECOME A PARTNER</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Refer and Earn</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Onboardin APIs</p>
+    
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">MORE</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Route</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Invoices</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Freelancer Payments</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">International</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Flash Checkout</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">UPI</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">ePOS</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Checkout Demo</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">RazorpayX Payroll</p>
+                    </div>
+    
+                    <!-- third -->
+                    <div class="flex flex-col">
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">ACCEPT PAYMENTS</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Payment Gateway</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Payment Pages</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Payment Links</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">QR Codes</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Subscription</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Smart Collect</p>
+    
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">DEVELOPERS</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Docs</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Integration</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">API Reference</p>
+    
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">RESOURCES</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Blog</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Customer Stories</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Events</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Chargeback Guide</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Settlement Guide</p>
+    
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">SOLUTIONS</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Education</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">E-commerce</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Saas</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">BFSI</p>
+    
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">FREE TOOLS</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">GST Calculator</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Online TDS Payments</p>
+                        <div class="flex pb-2">
+                            <p class="text-lightBlue font-bold cursor-pointer hover:text-deepBlue">GST Number Search</p>
+                            <p class="text-white font-bold inline-block rounded-sm bg-[#1bbd51] h-[1.5rem] p-[0.15rem] ml-1 text-sm">NEW</p>
+                        </div>
+                    </div>
+    
+                    <!-- fourth -->
+                    <div class="flex flex-col">
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">COMPANY</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">About Us</p>
+                        <div class="flex pb-2">
+                            <p class="text-lightBlue font-bold cursor-pointer hover:text-deepBlue">Careers</p>
+                            <p class="text-white font-bold inline-block rounded-sm bg-[#1bbd51] h-[1.5rem] p-[0.15rem] ml-1 text-sm">We're hiring!</p>
+                        </div>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Terms of Use</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Privacy Policy</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">QR Codes</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Grievance Redressal</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Responsible Disclosure</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Partners</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">White Papers</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Coorporate Informations</p>
+    
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-2 pt-1">HELP & SUPPORT</h3>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Support</p>
+                        <p class="text-lightBlue font-bold pb-2 cursor-pointer hover:text-deepBlue">Knowladge base</p>
+    
+                        <h3 class="text-[#5a6775] font-bold text-lg pb-4 pt-3">FIND US ONLINE</h3>
+                        <img src="./images/icons-social-handles.png" alt="" class="w-60 h-auto">
+    
+                        <h3 class="text-[#5a6775] font-bold pb-4 pt-6">REDG. OFFICE ADDRESS</h3>
+                        <div class="text-sm pb-8">
+                            <p>Razorpay Software Private Limited,</p>
+                            <p>1st Floor, SJR Cyber,</p>
+                            <p>22 Laskar Hosur Road. Adugodi.</p>
+                            <p>Bengaluru, 560030,</p>
+                            <p>Karnataka, India</p>
+                            <p>CIN: U72200KA2013PTC097389</p>
+                        </div>
+    
+                        <div class="text-sm">
+                            <p>@ Razorpay 2022</p>
+                            <p>All Rights Reserved</p>
+                        </div>
+    
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
